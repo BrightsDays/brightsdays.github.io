@@ -1,0 +1,230 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  width: 100%;
+  margin: 0 auto; }
+
+.hidden {
+  display: none; }
+
+.content {
+  display: block;
+  width: 100%;
+  max-width: 890px;
+  margin: 0 auto;
+  text-align: center; }
+
+header {
+  position: relative;
+  font-size: 30px;
+  width: 100%;
+  margin: 20px 0;
+  text-align: left; }
+  header a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #000000; }
+  header .toggle {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    width: 40px;
+    height: 24px;
+    border: 1px solid darkgrey;
+    border-radius: 24px;
+    cursor: pointer; }
+  header .toggle__switch {
+    position: absolute;
+    top: 2px;
+    right: 14px;
+    width: 18px;
+    height: 18px;
+    border-radius: 20px;
+    border: 1px solid darkgrey;
+    padding: 0 2px;
+    font-size: 13px;
+    font-weight: bold;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out; }
+
+.about {
+  padding: 10px;
+  border-top: solid lightgrey 1px;
+  border-bottom: solid lightgrey 1px;
+  text-align: justify; }
+  .about:after {
+    content: '';
+    width: 100%;
+    display: inline-block; }
+  .about .about__info {
+    display: inline-block;
+    text-align: left;
+    margin-right: 10px;
+    width: 60%;
+    max-width: 580px; }
+    .about .about__info h3 {
+      margin-top: 0; }
+    .about .about__info p:last-child {
+      margin-bottom: 0; }
+  .about .about__card {
+    display: inline-block;
+    vertical-align: top;
+    width: 290px; }
+    .about .about__card .profile-image {
+      margin: 8px 0 0;
+      display: block;
+      width: 290px;
+      border-radius: 50%; }
+    .about .about__card .social {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      list-style: none; }
+      .about .about__card .social a {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        transition: box-shadow 0.6s;
+        box-shadow: 0px 2px 10px -5px black;
+        background-size: cover;
+        border-radius: 30px;
+        margin: 12px 12px 0 0; }
+        .about .about__card .social a:nth-child(4) {
+          margin: 12px 0 0; }
+        .about .about__card .social a:last-child {
+          width: 137px;
+          margin: 12px 0 0; }
+      .about .about__card .social .resume {
+        background: url("/img/download.png") no-repeat;
+        background-size: cover;
+        border-radius: 30px;
+        width: 140px; }
+      .about .about__card .social a:hover {
+        transition: box-shadow 0.6s;
+        box-shadow: none; }
+  .about .facebook {
+    background: url("/img/facebook.png") no-repeat; }
+  .about .twitter {
+    background: url("/img/twitter.png") no-repeat; }
+  .about .github {
+    background: url("/img/github.png") no-repeat; }
+  .about .telegram {
+    background: url("/img/telegram.png") no-repeat; }
+  .about .mail {
+    background: url("/img/mail.png") no-repeat; }
+  .about .codepen {
+    background: url("/img/codepen.png") no-repeat; }
+
+.list {
+  padding-bottom: 10px;
+  animation-name: fade;
+  animation-duration: 2s; }
+
+@keyframes fade {
+  from {
+    opacity: 0.1; }
+  to {
+    opacity: 1; } }
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: solid lightgrey 1px; }
+  .menu .menu__item {
+    font-size: 20px;
+    margin: 10px 0;
+    cursor: pointer; }
+    .menu .menu__item:after {
+      display: block;
+      position: relative;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #000000;
+      content: "";
+      transition: width 0.3s ease-out; }
+    .menu .menu__item:hover:after, .menu .menu__item:focus:after {
+      width: 100%; }
+  .menu .active:after {
+    display: block;
+    position: relative;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    content: "";
+    width: 100% !important; }
+
+.about_min {
+  text-align: left;
+  padding: 0 10px; }
+
+.useful {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%; }
+  .useful .useful__link {
+    margin-top: 10px;
+    opacity: 1;
+    transition-duration: 1s; }
+    .useful .useful__link:hover {
+      opacity: 0.3;
+      transition-duration: 1s; }
+    .useful .useful__link img {
+      width: 210px;
+      height: 105px;
+      border-radius: 10px; }
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%; }
+  .portfolio .portfolio__link {
+    margin-top: 10px;
+    opacity: 1;
+    transition-duration: 1s; }
+    .portfolio .portfolio__link:hover {
+      opacity: 0.3;
+      transition-duration: 1s; }
+    .portfolio .portfolio__link img {
+      width: 210px;
+      border-radius: 10px; }
+
+footer {
+  border-top: solid lightgrey 1px; }
+  footer a {
+    text-decoration: none;
+    color: #000000; }
+
+@media screen and (max-width: 800px) {
+  .about .about__info {
+    width: 50%; } }
+
+@media screen and (max-width: 690px) {
+  .hidden {
+    display: block; }
+  header {
+    text-align: center; }
+    header a {
+      margin: 0; }
+    header .toggle {
+      display: none;
+      top: 70px;
+      right: 15px; }
+  .about .about__info {
+    display: none; }
+  .about:after {
+    display: none; }
+  .about .about__card {
+    display: block;
+    margin: 0 auto; }
+  .useful .useful__link img {
+    width: 290px;
+    height: auto; }
+  .portfolio .portfolio__link img {
+    width: 290px;
+    height: auto; } }
