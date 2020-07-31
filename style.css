@@ -126,8 +126,8 @@ header {
         width: 140px; }
       .about .about__card .social a:hover {
         opacity: 0.5; }
-    .about .about__card .facebook {
-      background: url("/img/facebook.png") no-repeat; }
+    .about .about__card .linkedin {
+      background: url("/img/linkedin.png") no-repeat; }
     .about .about__card .twitter {
       background: url("/img/twitter.png") no-repeat; }
     .about .about__card .github {
