@@ -152,7 +152,8 @@ header {
   .blog .blog__section {
     width: 280px;
     display: inline-block;
-    vertical-align: top; }
+    vertical-align: top;
+    padding-right: 5px; }
     .blog .blog__section li {
       list-style: none;
       margin-bottom: 3px; }
@@ -165,6 +166,11 @@ header {
     margin-top: 0; }
   .article p {
     font-size: 18px; }
+  .article blockquote {
+    font-style: italic;
+    margin-left: 2px;
+    border-left: 3.5px solid lightgrey;
+    padding-left: 15px; }
   .article .article__index-top {
     position: absolute;
     top: 30px;
