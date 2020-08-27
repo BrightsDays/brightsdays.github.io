@@ -188,7 +188,8 @@ header {
     margin: 0;
     text-align: right; }
   .article .article__img {
-    text-align: center; }
+    text-align: center;
+    margin: 0; }
     .article .article__img img {
       max-width: 100%; }
 
