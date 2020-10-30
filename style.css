@@ -122,28 +122,28 @@ header {
         .about .about__card .social a:nth-child(4), .about .about__card .social a:last-child {
           margin: 12px 0 0; }
       .about .about__card .social .resume {
-        background: url("/img/download.png") no-repeat;
+        background: url("img/download.png") no-repeat;
         background-size: cover;
         border-radius: 30px;
         width: 140px; }
       .about .about__card .social a:hover {
         opacity: 0.5; }
     .about .about__card .linkedin {
-      background: url("/img/linkedin.png") no-repeat; }
+      background: url("img/linkedin.svg") no-repeat; }
     .about .about__card .twitter {
-      background: url("/img/twitter.png") no-repeat; }
+      background: url("img/twitter.svg") no-repeat; }
     .about .about__card .github {
-      background: url("/img/github.png") no-repeat; }
-    .about .about__card .telegram {
-      background: url("/img/telegram.png") no-repeat; }
+      background: url("img/github.svg") no-repeat; }
+    .about .about__card .facebook {
+      background: url("img/facebook.svg") no-repeat; }
     .about .about__card .mail {
-      background: url("/img/mail.png") no-repeat; }
+      background: url("img/mail.svg") no-repeat; }
     .about .about__card .codepen {
-      background: url("/img/codepen.png") no-repeat; }
+      background: url("img/codepen.svg") no-repeat; }
     .about .about__card .instagram {
-      background: url("/img/instagram.png") no-repeat; }
+      background: url("img/instagram.svg") no-repeat; }
     .about .about__card .youtube {
-      background: url("/img/youtube.png") no-repeat; }
+      background: url("img/youtube.svg") no-repeat; }
 
 .blog {
   text-align: left;
