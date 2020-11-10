@@ -158,3 +158,13 @@ header {
     display: block;
     position: static;
     margin: 0 auto; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .content {
+    display: block;
+    width: 100%;
+    max-width: 890px;
+    margin: 0 auto; }
+  .about .about__info {
+    width: 60%;
+    max-width: 600px; } }
