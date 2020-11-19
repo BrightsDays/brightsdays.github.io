@@ -34,10 +34,10 @@ a {
   a:hover, a:active {
     text-decoration: underline; }
 
-ul {
+ul, ol {
   margin-top: 16px;
   padding-left: 20px; }
-  ul li {
+  ul li, ol li {
     margin-bottom: 5px;
     font-size: 17px; }
 
@@ -128,6 +128,7 @@ header {
   .article blockquote {
     font-style: italic;
     margin-left: 2px;
+    margin-top: 17px;
     border-left: 3.5px solid lightgrey;
     padding-left: 15px; }
   .article .article__index-top {
@@ -143,7 +144,8 @@ header {
     color: #696969;
     text-align: right; }
   .article .article__img {
-    text-align: center; }
+    text-align: center;
+    margin-top: 17px; }
     .article .article__img img {
       max-width: 100%; }
 
