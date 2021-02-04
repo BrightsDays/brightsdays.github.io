@@ -208,7 +208,8 @@ ul, ol {
 
 @media screen and (max-width: 690px) {
   .about .about__info {
-    width: 100%; }
+    width: 100%;
+  max-width: 100%; }
   .about .about__card {
     display: block;
     position: static;
@@ -217,6 +218,8 @@ ul, ol {
     margin: 14px 0; }
     .blog .blog__section ul li a {
       padding: 14px 0; } }
+    
+@media screen and (max-width: 600px) {.portfolio-box {text-align: center;}}
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .content {
