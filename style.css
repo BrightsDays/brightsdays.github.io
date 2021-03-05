@@ -64,7 +64,8 @@ ul, ol {
     top: 10px;
     right: 10px;
     vertical-align: top;
-    width: 290px; }
+    width: 290px;
+    margin-bottom: 20px;}
     .about .about__card .profile-image {
       display: block;
       width: 290px;
