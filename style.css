@@ -64,8 +64,7 @@ ul, ol {
     top: 10px;
     right: 10px;
     vertical-align: top;
-    width: 290px;
-    margin-bottom: 20px;}
+    width: 290px; }
     .about .about__card .profile-image {
       display: block;
       width: 290px;
@@ -214,7 +213,7 @@ ul, ol {
   .about .about__card {
     display: block;
     position: static;
-    margin: 0 auto; }
+    margin: 0 auto 20px; }
   .blog .blog__section ul li {
     margin: 14px 0; }
     .blog .blog__section ul li a {
