@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap')
+
+\:root
+    --background: #ffffff
+    --text: #000000
+    --link: #157bc4
+    --summary: #dfdfdf
+
+[data-theme="dark"]
+    --background: #30363d
+    --text: #ffffff
+    --link: #d6983c
+    --summary: #505660
+
+@keyframes FadeIn
+    0%
+        opacity: 0
+
+    100%
+        opacity: 1
+
+@keyframes jumpArrow
+    0%
+        transform: translateY(-10px)
+
+    25%
+        transform: translateY(10px)
+
+    50%
+        transform: translateY(-5px)
+
+    75%
+        transform: translateY(5px)
+
+    100%
+        transform: translateY(0)
+
+*
+    margin: 0
+    padding: 0
+    font-family: 'Montserrat', sans-serif
+    font-size: 10px
+    color: var(--text)
+    box-sizing: border-box
+    outline: none
+
+body
+    background: var(--background)
+    transition: background 0.3s
+
+.h1
+    font-size: 3em
+    font-weight: 700
+    line-height: 1em
+
+.h2
+    font-size: 2.2em
+    font-weight: 500
+    margin-top: .8em
+
+.h3
+    font-size: 1.8em
+    font-weight: 500
+    margin-top: 1em
+
+.p
+    font-size: 1.8em
+    margin-top: 1em
+    line-height: 1.7em
+
+.b
+    font-size: 1em
+    font-weight: 500
+
+.i
+    font-size: 1em
+
+.a
+    font-size: 1em
+    margin-top: 1em
+    text-decoration: none
+    font-weight: 450
+    color: var(--link)
+
+    &:hover, &:focus, &:active
+        text-decoration: underline
+
+.ul
+    list-style: outside
+    margin-top: 1.5em
+    padding-left: 5px
+
+    .li
+        margin-top: 0.5em
+        font-size: 1.8em
+
+.details
+    margin-top: 1.5em
+    padding: 15px
+    border-top: 1px solid var(--summary)
+    border-bottom: 1px solid var(--summary)
+
+    &[open]
+        animation-name: FadeIn
+        animation-duration: 0.8s
+
+        .summary:after
+            content: '\290A'
+
+.summary
+    position: relative
+    list-style: none
+    font-size: 2.2em
+    font-weight: 500
+    cursor: pointer
+
+    &::-webkit-details-marker
+        display: none
+
+    &:after
+        content: '\290B'
+        position: absolute
+        top: 0
+        right: 0
+        transition: transform 0.3s
+
+    &:hover:after, &:focus:after, &:active:after
+        animation-name: jumpArrow
+        animation-duration: 0.8s
+
+.container
+    display: flex
+    flex-wrap: wrap
+    margin: 0 auto
+    padding: 40px 0
+    width: 1100px
+    max-width: 100%
+    gap: 30px
+
+.card
+    position: relative
+    vertical-align: top
+    margin: 0 auto
+    width: 290px
+
+    &__toggle
+        position: absolute
+        top: 0
+        right: 0
+        -webkit-appearance: none
+        -moz-appearance: none
+        width: 36px
+        height: 20px
+        cursor: pointer
+
+        &:before
+            content: ''
+            position: absolute
+            top: 0
+            right: 0
+            width: 36px
+            height: 20px
+            border: solid darkgrey 1px
+            border-radius: 20px
+            opacity: 1
+
+        &:after
+            content: ''
+            position: absolute
+            top: 3px
+            right: 3px
+            width: 16px
+            height: 16px
+            border-radius: 16px
+            background-color: darkgrey
+            -moz-transition: all 0.3s ease-out
+            -o-transition: all 0.3s ease-out
+            -webkit-transition: all 0.3s ease-out
+            transition: all 0.3s ease-out
+            pointer-events: none
+
+        &:checked.card__toggle:after
+                transform: translateX(-16px)
+
+    &__image
+        display: block
+        width: 290px
+        height: 290px
+        border-radius: 50%
+
+    &__social
+        display: flex
+        justify-content: space-between
+        list-style: none
+
+    &__link
+        display: inline-block
+        width: 60px
+        height: 60px
+        transition: opacity 0.6s
+        border-radius: 30px
+        margin: 12px 0 0 0
+
+        &:hover, &:focus, &:active
+            opacity: 0.5
+
+        &--telegram
+            background: url("img/telegram.svg") no-repeat
+
+        &--mail
+            background: url("img/mail.svg") no-repeat
+
+        &--twitter
+            background: url("img/twitter.svg") no-repeat
+
+        &--github
+            background: url("img/github.svg") no-repeat
+
+.content
+    width: 720px
+    max-width: 100%
+    margin: 0 auto
+
+.content-info
+    padding: 0 15px
+
+.content-work, .content-portfolio
+    margin-top: -1px
+
+.content-blog
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    gap: 20px
+
+    .h2
+        flex: 1 1 100%
+        padding-left: 15px
+
+    &__section
+        flex: 1 1 45%
+        padding: 0 15px
+
+        .ul
+            list-style: none
+            min-width: 280px
+            padding: 0
+
+@media screen and (max-width: 700px)
+    .container
+        padding: 15px 0
