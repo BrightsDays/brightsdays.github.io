@@ -1,8 +1,8 @@
 <template lang="pug">
-  details.details.content-blog
+  details.details.content-blog(open)
     summary.summary Мой блог
 
-    .wrap
+    .content-blog__wrap
       .content-blog__section
         h3.h3 Old School Magic
         ul.ul
@@ -31,5 +31,17 @@
           li.li
             a.a(href="pages/oshibki-pri-rashlamlenii.html") Ошибки при расхламлении
           li.li
-            a.a(href="pages/chto-takoe-minimalizm/chto-takoe-minimalizm.html") Что такое минимализм?
+            a.a(href="articles/chto-takoe-minimalism") Что такое минимализм?
 </template>
+
+<style lang="stylus">
+.content-blog
+  &__wrap
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    gap: 20px
+
+  &__section
+    flex: 1 1 45%
+</style>

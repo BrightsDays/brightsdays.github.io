@@ -18,21 +18,24 @@ export default {
     css: [
         './assets/styl/main.styl',
     ],
+    buildModules: ['@nuxtjs/style-resources'],
+    styleResources: {
+        stylus: [
+            './assets/styl/variables.styl'
+        ]
+    },
     // modules: [
     //     '@nuxtjs/axios',
     //     '@nuxtjs/style-resources',
     //     '@nuxtjs/auth-next'
     // ],
-    // styleResources: {
-    //     stylus: [
-    //         './assets/styl/variables.styl'
-    //     ]
-    // },
     // plugins: [
     // ],
     components: {
         dirs: [
-            '~/components'
+            '~/components',
+            '~/layouts',
+            '~/articles'
         ]
     },
     // generate: {
