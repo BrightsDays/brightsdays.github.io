@@ -32,7 +32,7 @@
             a.a(href="articles/chto-takoe-minimalism") Что такое минимализм?
 </template>
 
-<style lang="stylus">
+<style lang="sass">
 .blog
   &__wrap
     display: flex

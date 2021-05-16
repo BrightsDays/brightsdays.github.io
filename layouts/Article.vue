@@ -20,35 +20,35 @@ export default {
 }
 </script>
 
-<style lang="stylus">
+<style lang="sass">
 .article
-  position relative
-  padding 40px 10px 80px
+  position: relative
+  padding: 40px 10px 80px
 
   &__blockquote
-    font-size 1.4em
-    padding-left 10px
-    margin-top 1.5em
-    border-left 2px solid var(--summary)
+    font-size: 1.4em
+    padding-left: 10px
+    margin-top: 1.5em
+    border-left: 2px solid var(--summary)
 
   &__image
-    display block
-    margin 1.5em auto 0
-    max-width 100%
+    display: block
+    margin: 1.5em auto 0
+    max-width: 100%
 
   &__index-bottom
-    position absolute
-    font-size 1.6em
-    bottom 30px
-    left 10px
+    position: absolute
+    font-size: 1.6em
+    bottom: 30px
+    left: 10px
 
   &__date
-    font-size 1.2em
-    position absolute
-    bottom 30px
-    right 10px
-    text-align right
+    font-size: 1.2em
+    position: absolute
+    bottom: 30px
+    right: 10px
+    text-align: right
 
-  @media $tablet
-    padding-top 15px
+  @media ($tablet)
+    padding-top: 15px
 </style>

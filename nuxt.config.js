@@ -16,15 +16,15 @@ export default {
     },
     ssr: true,
     css: [
-        './assets/styl/main.styl',
+        './assets/sass/main.sass',
     ],
     buildModules: [
         '@nuxtjs/style-resources',
         '@nuxtjs/color-mode'
     ],
     styleResources: {
-        stylus: [
-            './assets/styl/variables.styl'
+        sass: [
+            './assets/sass/variables.sass'
         ]
     },
     modules: [],
