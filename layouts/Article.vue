@@ -1,9 +1,9 @@
 <template lang="pug">
   .content.article
-    h1.h1 {{ title }}
+    h1.heading--big {{ title }}
     slot
-    i.i.article__date Viacheslav Ivanov<br>{{ date }}
-    a.a.article__index-bottom(href="/") На главную
+    i.article__date Viacheslav Ivanov<br>{{ date }}
+    a.link.article__index-bottom(href="/") На главную
 </template>
 
 <script>

@@ -1,13 +1,22 @@
 <template lang="pug">
-  details.details
+  details.details(:open="deviceType === 'desktop'")
     summary.summary {{ title }}
     slot
 </template>
 
 <script>
+import {mapState} from "vuex";
+
 export default {
   props: {
     title: {type: String}
+  },
+  computed: {
+    ...mapState(['adaptive']),
+    deviceType() {
+      return this.adaptive.deviceType;
+    }
+
   }
 }
 </script>
@@ -35,7 +44,7 @@ export default {
   cursor: pointer
   transition: padding 0.3s
 
-  &::-webkit-details-marker
+  &::marker
     display: none
 
   &:before, &:after
@@ -52,7 +61,7 @@ export default {
 
   &:after
     top: 12px
-    right: 12px
+    right: 11px
     width: 15px
     transform: rotate(40deg)
 </style>

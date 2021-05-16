@@ -33,34 +33,31 @@ body
   background: var(--background)
   transition: background 0.3s
 
-.h1
-  font-size: 3em
-  font-weight: 700
-  line-height: 1em
-
-.h2
+.heading
   font-size: 2.2em
   font-weight: 500
   margin-top: .8em
 
-.h3
-  font-size: 1.8em
-  font-weight: 500
-  margin-top: 1em
+  &--big
+    font-size: 3em
+    font-weight: 600
+    margin-top: 0
 
-.p
+  &--small
+    font-size: 1.8em
+    font-weight: 500
+    margin-top: 1em
+
+.paragraph
   font-size: 1.8em
   margin-top: 1em
   line-height: 1.7em
 
-.b
+b, i
   font-size: 1em
   font-weight: 500
 
-.i
-  font-size: 1em
-
-.a
+.link
   font-size: 1em
   text-decoration: none
   font-weight: 450
@@ -69,12 +66,12 @@ body
   &:hover, &:focus, &:active
     text-decoration: underline
 
-.ul
+.list
   list-style: none
   margin-top: 1.5em
   min-width: 280px
 
-  .li
+  .list__item
     margin-top: 0.5em
     font-size: 1.8em
 
