@@ -1,5 +1,4 @@
 .nuxt
 node_modules
-dist
 .idea
 package-lock.json
