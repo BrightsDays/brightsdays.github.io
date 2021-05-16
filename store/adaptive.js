@@ -7,6 +7,5 @@ export const mutations = {
         state.deviceType = window.innerWidth > 700 ?
             'desktop' :
             'tablet'
-        console.log(state.deviceType)
     }
 };
