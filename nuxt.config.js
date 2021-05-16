@@ -1,8 +1,5 @@
 export default {
     target: 'static',
-    router: {
-        base: '/brightsdays.github.io/'
-    },
     head: {
         title: 'brightsdays',
         htmlAttrs: {

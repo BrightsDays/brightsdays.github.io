@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/articles/os-mtg-kak-nachaty-igrat", {data:[{}],fetch:{},mutations:[]});
