@@ -1,8 +1,11 @@
 <template lang="pug">
   .card
-    input.card__toggle(type="checkbox" @change="switchTheme($event)")
+    input.card__toggle(
+      type="checkbox"
+      :checked="loaded === 'dark'"
+      @change="switchTheme($event)")
 
-    img.card__image(src='../assets/img/card/vivanov.jpg' alt='vivanov')
+    img.card__image(src="../assets/img/card/vivanov.jpg" alt="vivanov")
 
     .card__social
       a.card__link(
@@ -43,35 +46,29 @@ export default {
       ]
     }
   },
-  methods: {
-    switchTheme (e) {
-      if (e.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
-      }
-      else {
-        document.documentElement.setAttribute('data-theme', 'light');
-        localStorage.setItem('theme', 'light');
+  computed: {
+    loaded() {
+      if (!process.server) {
+        return localStorage.theme;
       }
     }
   },
-  // mounted: {
-  //   toggle () {
-  //     const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-  //
-  //     if (currentTheme) {
-  //       document.documentElement.setAttribute('data-theme', currentTheme);
-  //
-  //       if (currentTheme === 'dark') {
-  //         document.querySelector('.card__toggle').checked = true;
-  //       }
-  //     }
-  //   }
-  // }
+  methods: {
+    switchTheme (e) {
+      if (e.target.checked) {
+        this.$colorMode.preference = 'dark';
+        localStorage.setItem('theme', 'dark');
+      }
+      else {
+        this.$colorMode.preference = 'light';
+        localStorage.setItem('theme', 'light');
+      }
+    }
+  }
 }
 </script>
 
-<style lang="stylus">
+<style lang="sass">
 .card
   position: relative
   vertical-align: top
@@ -93,21 +90,20 @@ export default {
       position: absolute
       top: 0
       right: 0
-      width: 36px
-      height: 20px
+      width: 44px
+      height: 28px
       border: solid darkgrey 1px
       border-radius: 20px
       opacity: 1
 
     &:after
-      content: ''
+      content: url("../assets/img/card/color-mode.svg")
       position: absolute
       top: 3px
       right: 3px
-      width: 16px
-      height: 16px
+      width: 24px
+      height: 24px
       border-radius: 16px
-      background-color: darkgrey
       -moz-transition: all 0.3s ease-out
       -o-transition: all 0.3s ease-out
       -webkit-transition: all 0.3s ease-out

@@ -1,9 +1,7 @@
 <template lang="pug">
-  details.details.content-blog(open)
-    summary.summary Мой блог
-
-    .content-blog__wrap
-      .content-blog__section
+  Details.blog(open :title="'Мой блог'")
+    .blog__wrap
+      .blog__section
         h3.h3 Old School Magic
         ul.ul
           li.li
@@ -13,7 +11,7 @@
           li.li
             a.a(href="pages/old-school-deck-rabid-wombat.html") Old School Deck: Rabid Wombat
 
-      .content-blog__section
+      .blog__section
         h3.h3 Magic: the Gathering
         ul.ul
           li.li
@@ -23,7 +21,7 @@
           li.li
             a.a(href="pages/Retro-Decktech-Warp-World-T2.html") Retro Decktech Warp World (T2)
 
-      .content-blog__section
+      .blog__section
         h3.h3 Минимализм
         ul.ul
           li.li
@@ -35,7 +33,7 @@
 </template>
 
 <style lang="stylus">
-.content-blog
+.blog
   &__wrap
     display: flex
     flex-wrap: wrap
