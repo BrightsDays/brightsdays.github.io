@@ -29,7 +29,7 @@ export default {
     },
     modules: [],
     plugins: [
-        '~/plugins/window.js'
+        '~/plugins/window.client.js'
     ],
     components: {
         dirs: [

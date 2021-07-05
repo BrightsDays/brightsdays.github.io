@@ -36,6 +36,11 @@ export default {
     margin: 1.5em auto 0
     max-width: 100%
 
+  &__caption
+    font-size: 1.6em
+    text-align: center
+    margin-top: 3px
+
   &__index-bottom
     position: absolute
     font-size: 1.6em

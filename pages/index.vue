@@ -1,12 +1,7 @@
 <template lang="pug">
   .container
     Card
-
-    .content
-      Info
-      Work
-      Portfolio
-      MyBlog
+    Content
 </template>
 
 <style lang="sass">
