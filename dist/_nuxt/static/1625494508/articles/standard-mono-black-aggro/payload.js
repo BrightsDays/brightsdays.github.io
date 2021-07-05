@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/articles/standard-mono-black-aggro", {data:[{}],fetch:{},mutations:[]});

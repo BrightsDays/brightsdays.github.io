@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/articles/retro-decktech-warp-world-t2", {data:[{}],fetch:{},mutations:[]});
