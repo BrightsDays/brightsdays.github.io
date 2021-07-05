@@ -81,6 +81,8 @@ export default {
     right: 0
     -webkit-appearance: none
     -moz-appearance: none
+    border: none
+    background: none
     width: 36px
     height: 20px
     cursor: pointer

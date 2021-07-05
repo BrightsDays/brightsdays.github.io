@@ -14,8 +14,8 @@
       .blog__section
         h3.heading--small Magic: the Gathering
         ul.list
-          //li.list__item
-          //  a.link(href="pages/modern-fetchless-gifts-storm/modern-fetchless-gifts-storm.html") Modern: Fetchless Gifts Storm
+          li.list__item
+            a.link(href="pages/modern-fetchless-gifts-storm/modern-fetchless-gifts-storm.html") Modern: Fetchless Gifts Storm
           li.list__item
             a.link(href="articles/standard-mono-black-aggro") Standard: Mono-Black Aggro
           li.list__item

@@ -1,9 +1,9 @@
-<template>
-  <div>
-    <h1 v-if="error.statusCode === 404">Page not found</h1>
-    <h1 v-else>An error occurred</h1>
-    <a href="/">Home page</a>
-  </div>
+<template lang="pug">
+  .content.error
+    h1.heading--big(v-if="error.statusCode === 404") Страница не найдена &#128560;
+    h1.heading--big(v-else) Произошла ошибка
+    p.paragraph
+      a.link(href="/") На главную
 </template>
 
 <script>
@@ -12,3 +12,9 @@ export default {
   layout: 'error'
 }
 </script>
+
+<style lang="sass">
+.error
+  padding-top: 30vh
+  text-align: center
+</style>

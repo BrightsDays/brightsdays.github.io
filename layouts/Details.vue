@@ -16,7 +16,6 @@ export default {
     deviceType() {
       return this.adaptive.deviceType;
     }
-
   }
 }
 </script>

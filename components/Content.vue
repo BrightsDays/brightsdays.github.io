@@ -2,9 +2,8 @@
   .content
 
     .info
-      .info__intro
-        h1.heading--big Привет!&#128075;
-        p.paragraph Меня зовут Вячеслав, и я  фронтенд-разработчик.
+      h1.heading--big Привет! &#128075;
+      p.paragraph Меня зовут Вячеслав, и я  фронтенд-разработчик.
 
     Details(:title="'Обо мне'")
       p.paragraph Живу в Санкт-Петербурге, с начала 2020 работаю удаленно.
@@ -29,7 +28,7 @@
 </script>
 
 <style lang="sass">
-.info__intro
+.info
   padding: 0 15px
   margin-bottom: 1.5em
 </style>
