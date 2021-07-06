@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/articles/old-school-deck-dead-guy-ale", {data:[{}],fetch:{},mutations:[]});
