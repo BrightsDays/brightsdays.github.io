@@ -1,7 +1,7 @@
 <template lang="pug">
   .container
-    Card
-    Content
+    page-card
+    page-content
 </template>
 
 <style lang="sass">
