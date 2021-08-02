@@ -23,15 +23,15 @@ export default {
   data () {
     return {
       links: [
-        { title: 'Telegram',
-          class: 'telegram',
-          url: 'https://t.me/brightsdays',
-          target: '_blank'
-        },
         { title: 'Google Mail',
           class: 'mail',
           url: 'mailto:brightsdayss@gmail.com',
           target: ''
+        },
+        { title: 'Twitter',
+          class: 'twitter',
+          url: 'https://twitter.com/brightsdays',
+          target: '_blank'
         },
         { title: 'Instagram',
           class: 'instagram',
@@ -134,8 +134,8 @@ export default {
     border-radius: 30px
     margin: 12px 0 0 0
 
-    &--telegram
-      background: url("../assets/img/card/telegram.svg") no-repeat
+    &--twitter
+      background: url("../assets/img/card/twitter.svg") no-repeat
 
     &--mail
       background: url("../assets/img/card/mail.svg") no-repeat
