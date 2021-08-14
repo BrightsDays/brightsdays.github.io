@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/articles/modern-fetchless-gifts-storm", {data:[{}],fetch:{},mutations:[]});
