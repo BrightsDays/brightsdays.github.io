@@ -1,26 +1,48 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <page-card />
+    <page-content />
+  </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script lang="ts">
+import { Options, Vue } from 'vue-class-component';
+import PageCard from './components/PageCard.vue';
+import PageContent from './components/PageContent.vue';
 
-export default {
-  name: 'App',
+@Options({
   components: {
-    HelloWorld
+    PageCard,
+    PageContent
+  },
+  created() {
+    window.addEventListener("resize", this.changeType);
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.changeType);
+  },
+  methods: {
+    changeType() {
+      this.$store.commit('changeType', window.innerWidth);
+    }
   }
-}
+})
+
+export default class App extends Vue {}
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="sass">
+@import './assets/sass/main.sass'
+
+.container
+  display: flex
+  flex-wrap: wrap
+  margin: 0 auto
+  padding: 40px 0
+  width: 1100px
+  max-width: 100%
+  gap: 30px
+
+  @media ($tablet)
+    padding: 15px 0
 </style>
