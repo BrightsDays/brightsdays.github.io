@@ -1,14 +1,13 @@
-<template lang="pug">
-  .content.article
-    h1.heading--big {{ title }}
-    slot
-    i.article__date Viacheslav Ivanov<br>{{ date }}
-    a.link.article__index-bottom(href="/") На главную
+<template>
+  <div class="content article">
+    <h1 class="heading--big">{{ title }}</h1>
+    <slot />
+    <i class="article__date">Viacheslav Ivanov<br>{{ date }}</i>
+    <a class="link article__index-bottom" href="/">На главную</a>
+  </div>
 </template>
 
 <script>
-//TODO Remove pug
-
 export default {
   props: {
     title: { type: String },
