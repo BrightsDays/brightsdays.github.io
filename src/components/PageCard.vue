@@ -2,8 +2,8 @@
   <div class="card">
     <input class="card__toggle"
            type="checkbox"
-           :checked="loaded === 'dark'"
-           @change="switchTheme($event)">
+           v-model="darkTheme"
+           @change="switchTheme()">
     <img class="card__image" src="../assets/img/card/vivanov.jpg" alt="vivanov" />
     <div class="card__social">
       <a class="card__link"
@@ -18,7 +18,6 @@
 </template>
 
 <script>
-// TODO fix color mode
 export default {
   data () {
     return {
@@ -43,7 +42,8 @@ export default {
           url: 'https://github.com/BrightsDays',
           target: '_blank'
         }
-      ]
+      ],
+      darkTheme: false
     }
   },
   computed: {
@@ -51,14 +51,17 @@ export default {
       return localStorage.theme;
     }
   },
+  mounted() {
+    if (localStorage.theme === 'dark') this.darkTheme = true;
+    this.switchTheme();
+  },
   methods: {
-    switchTheme (e) {
-      if (e.target.checked) {
-        this.$colorMode.preference = 'dark';
+    switchTheme () {
+      if (this.darkTheme) {
+        document.documentElement.setAttribute('theme', 'dark');
         localStorage.setItem('theme', 'dark');
-      }
-      else {
-        this.$colorMode.preference = 'light';
+      } else {
+        document.documentElement.setAttribute('theme', 'light');
         localStorage.setItem('theme', 'light');
       }
     }
