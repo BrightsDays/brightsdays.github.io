@@ -2,8 +2,7 @@
   <div class="card">
     <input class="card__toggle"
            type="checkbox"
-           v-model="darkTheme"
-           @change="switchTheme()">
+           v-model="darkTheme">
     <img class="card__image" src="../assets/img/card/vivanov.jpg" alt="vivanov" />
     <div class="card__social">
       <a class="card__link"
@@ -46,17 +45,11 @@ export default {
       darkTheme: false
     }
   },
-  computed: {
-    loaded() {
-      return localStorage.theme;
-    }
-  },
   mounted() {
     if (localStorage.theme === 'dark') this.darkTheme = true;
-    this.switchTheme();
   },
-  methods: {
-    switchTheme () {
+  watch: {
+    darkTheme() {
       if (this.darkTheme) {
         document.documentElement.setAttribute('theme', 'dark');
         localStorage.setItem('theme', 'dark');
