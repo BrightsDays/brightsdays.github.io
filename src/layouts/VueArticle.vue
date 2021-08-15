@@ -12,19 +12,16 @@ export default {
   props: {
     title: { type: String },
     date: { type: String }
-  },
-  head () {
-    return {
-      title: `brightsdays: ${this.title}`,
-    }
-  },
+  }
 }
 </script>
 
 <style lang="sass">
+@import '../assets/sass/main.sass'
+
 .article
   position: relative
-  padding: 40px 10px 80px
+  padding: 0 1.5em 6em
 
   &__blockquote
     font-size: 1.4em
@@ -45,16 +42,13 @@ export default {
   &__index-bottom
     position: absolute
     font-size: 1.6em
-    bottom: 30px
-    left: 10px
+    bottom: 1em
+    left: 1em
 
   &__date
     font-size: 1.2em
     position: absolute
-    bottom: 30px
-    right: 10px
+    bottom: 1em
+    right: 1.5em
     text-align: right
-
-  @media ($tablet)
-    padding-top: 15px
 </style>

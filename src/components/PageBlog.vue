@@ -5,30 +5,30 @@
         <h3 class="heading--small">Old School Magic</h3>
         <ul class="list">
           <li class="list__item">
-            <a class="link" href="articles/os-mtg-kak-nachaty-igrat">Old School: Как начать играть?</a>
+            <a class="link" href="/articles/os-mtg-kak-nachaty-igrat">Old School: Как начать играть?</a>
           </li>
-          <li class="list__item">
-            <a class="link" href="articles/old-school-deck-dead-guy-ale">Old School Deck: Dead Guy Ale</a>
-          </li>
-          <li class="list__item">
-            <a class="link" href="articles/old-school-deck-rabid-wombat">Old School Deck: Rabid Wombat</a>
-          </li>
+<!--          <li class="list__item">-->
+<!--            <a class="link" href="../views/articles/old-school-deck-dead-guy-ale">Old School Deck: Dead Guy Ale</a>-->
+<!--          </li>-->
+<!--          <li class="list__item">-->
+<!--            <a class="link" href="../views/articles/old-school-deck-rabid-wombat">Old School Deck: Rabid Wombat</a>-->
+<!--          </li>-->
         </ul>
       </div>
-      <div class="blog__section">
-        <h3 class="heading--small">Magic: the Gathering</h3>
-        <ul class="list">
-          <li class="list__item">
-            <a class="link" href="articles/modern-fetchless-gifts-storm">Modern: Fetchless Gifts Storm</a>
-          </li>
-          <li class="list__item">
-            <a class="link" href="articles/articles/standard-mono-black-aggro">Standard: Mono-Black Aggro</a>
-          </li>
-          <li class="list__item">
-            <a class="link" href="articles/articles/retro-decktech-warp-world-t2">Retro Decktech Warp World (T2)</a>
-          </li>
-        </ul>
-      </div>
+<!--      <div class="blog__section">-->
+<!--        <h3 class="heading&#45;&#45;small">Magic: the Gathering</h3>-->
+<!--        <ul class="list">-->
+<!--          <li class="list__item">-->
+<!--            <a class="link" href="../views/articles/modern-fetchless-gifts-storm">Modern: Fetchless Gifts Storm</a>-->
+<!--          </li>-->
+<!--          <li class="list__item">-->
+<!--            <a class="link" href="../views/articles/articles/standard-mono-black-aggro">Standard: Mono-Black Aggro</a>-->
+<!--          </li>-->
+<!--          <li class="list__item">-->
+<!--            <a class="link" href="../views/articles/articles/retro-decktech-warp-world-t2">Retro Decktech Warp World (T2)</a>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </div>-->
     </div>
   </vue-details>
 </template>

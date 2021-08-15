@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card" v-if="$route.fullPath === '/'">
     <input class="card__toggle"
            type="checkbox"
            v-model="darkTheme">
@@ -45,7 +45,7 @@ export default {
       darkTheme: false
     }
   },
-  mounted() {
+  created() {
     if (localStorage.theme === 'dark') this.darkTheme = true;
   },
   watch: {

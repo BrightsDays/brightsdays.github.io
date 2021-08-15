@@ -1,19 +1,17 @@
 <template>
   <div class="container">
     <page-card />
-    <page-content />
+    <router-view />
   </div>
 </template>
 
-<script lang="ts">
-import { Options, Vue } from 'vue-class-component';
+<script>
 import PageCard from './components/PageCard.vue';
-import PageContent from './components/PageContent.vue';
+import {Options, Vue} from "vue-class-component";
 
 @Options({
   components: {
-    PageCard,
-    PageContent
+    PageCard
   },
   created() {
     window.addEventListener("resize", this.changeType);
