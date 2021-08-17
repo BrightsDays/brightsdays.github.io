@@ -17,13 +17,13 @@
       <ul class="list">
         <li class="list__item">
           <ul class="work__info">
-            <i>2021</i> - <b>ExtTeam</b>, Frontend Developer
+            <p><i>2021</i> - <b>ExtTeam</b>, Frontend Developer</p>
             <p>- работаю в настоящее время.</p>
           </ul>
         </li>
         <li class="list__item">
           <ul class="work__info">
-            <i>2020-2021</i> - <b>AdCombo</b>, HTML/CSS Developer
+            <p><i>2020-2021</i> - <b>AdCombo</b>, HTML/CSS Developer</p>
             <p>- верстал посадочные страницы, адаптивно и кросс-браузерно;</p>
             <p>- использовал Gulp, Pug, SASS/SCSS;</p>
             <p>- создавал слайдеры, навигацию, параллакс-эффекты и другие анимации.</p>
@@ -58,10 +58,7 @@ export default {
     font-size: inherit
 
     p
-      font-size: 0.9em
+      font-size: 1em
       line-height: 1.2em
       margin-top: 0.3em
-
-  .list__item
-    margin-top: 1em
 </style>

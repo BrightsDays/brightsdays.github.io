@@ -7,9 +7,9 @@
           <li class="list__item">
             <a class="link" href="/articles/os-mtg-kak-nachaty-igrat">Old School: Как начать играть?</a>
           </li>
-<!--          <li class="list__item">-->
-<!--            <a class="link" href="../views/articles/old-school-deck-dead-guy-ale">Old School Deck: Dead Guy Ale</a>-->
-<!--          </li>-->
+          <li class="list__item">
+            <a class="link" href="/articles/old-school-deck-dead-guy-ale">Old School Deck: Dead Guy Ale</a>
+          </li>
 <!--          <li class="list__item">-->
 <!--            <a class="link" href="../views/articles/old-school-deck-rabid-wombat">Old School Deck: Rabid Wombat</a>-->
 <!--          </li>-->
