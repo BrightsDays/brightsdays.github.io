@@ -31,7 +31,7 @@
         </li>
       </ul>
     </vue-details>
-    <page-blog />
+<!--    <page-blog />-->
   </div>
 </template>
 
@@ -41,7 +41,7 @@ import PageBlog from "@/components/PageBlog";
 
 export default {
   components: {
-    PageBlog,
+    // PageBlog,
     VueDetails
   }
 }
