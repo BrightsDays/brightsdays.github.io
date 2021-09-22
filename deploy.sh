@@ -6,7 +6,7 @@ npm run build
 
 cd dist
 
-git init
+git checkout github-pages
 git add -A
 git commit -m 'deploy'
 
