@@ -18,20 +18,22 @@
         <li class="list__item">
           <ul class="work__info">
             <p><i>2021</i> - <b>ExtTeam</b>, Frontend Developer</p>
-            <p>- работаю в настоящее время.</p>
+            <p>- Разработка портала для сотрудников компании-заказчика;</p>
+            <p>- Разработка конструктора сайтов;</p>
+            <p>- В работе использовались VueJS, NuxtJS, Vuex, Vue Router, Vuetify, Webpack, Gulp, Pug, Jade, Stylus.</p>
           </ul>
         </li>
         <li class="list__item">
           <ul class="work__info">
             <p><i>2020-2021</i> - <b>AdCombo</b>, HTML/CSS Developer</p>
-            <p>- верстал посадочные страницы, адаптивно и кросс-браузерно;</p>
-            <p>- использовал Gulp, Pug, SASS/SCSS;</p>
-            <p>- создавал слайдеры, навигацию, параллакс-эффекты и другие анимации.</p>
+            <p>- Верстка посадочных страниц, адаптивно и кросс браузерно;</p>
+            <p>- Создание слайдеров, навигации, параллакс-эффектов и других анимаций;</p>
+            <p>- В работе использовались Gulp, JS, Pug, SASS.</p>
           </ul>
         </li>
       </ul>
     </vue-details>
-<!--    <page-blog />-->
+    <page-blog />
   </div>
 </template>
 
@@ -41,7 +43,7 @@ import PageBlog from "@/components/PageBlog";
 
 export default {
   components: {
-    // PageBlog,
+    PageBlog,
     VueDetails
   }
 }

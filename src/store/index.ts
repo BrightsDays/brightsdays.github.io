@@ -5,7 +5,7 @@ export default createStore({
     deviceType: 'desktop'
   },
   mutations: {
-    changeType(state, value) {
+    changeType(state) {
       state.deviceType = window.innerWidth > 700 ?
           'desktop' :
           'tablet'
