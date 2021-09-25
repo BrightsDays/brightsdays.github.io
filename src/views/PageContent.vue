@@ -33,17 +33,17 @@
         </li>
       </ul>
     </vue-details>
-    <page-blog />
+<!--    <page-blog />-->
   </div>
 </template>
 
 <script>
 import VueDetails from '../layouts/VueDetails';
-import PageBlog from "@/components/PageBlog";
+// import PageBlog from "@/components/PageBlog";
 
 export default {
   components: {
-    PageBlog,
+    // PageBlog,
     VueDetails
   }
 }
