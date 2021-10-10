@@ -1,0 +1,156 @@
+<template>
+  <div v-if="$route.fullPath === '/'" class="card">
+<!--    <input-->
+<!--      v-model="darkTheme"-->
+<!--      class="card__toggle"-->
+<!--      type="checkbox"-->
+<!--    >-->
+<!--    <img class="card__image" src="../assets/img/card/vivanov.jpg" alt="vivanov">-->
+<!--    <div class="card__social">-->
+<!--      <a-->
+<!--        v-for="(item, i) in links"-->
+<!--        :key="i"-->
+<!--        class="card__link"-->
+<!--        :class="`card__link&#45;&#45;${item.class}`"-->
+<!--        :title="item.title"-->
+<!--        :href="item.url"-->
+<!--        :target="item.target"-->
+<!--      />-->
+<!--    </div>-->
+  </div>
+</template>
+
+<script>
+export default {
+  data () {
+    return {
+      links: [
+        {
+          title: 'Telegram',
+          class: 'telegram',
+          url: 'https://t.me/brightsdays',
+          target: '_blank'
+        },
+        {
+          title: 'Google Mail',
+          class: 'mail',
+          url: 'mailto:brightsdayss@gmail.com',
+          target: ''
+        },
+        {
+          title: 'Instagram',
+          class: 'instagram',
+          url: 'https://instagram.com/brightsdays',
+          target: '_blank'
+        },
+        {
+          title: 'Github',
+          class: 'github',
+          url: 'https://github.com/BrightsDays',
+          target: '_blank'
+        }
+      ],
+      darkTheme: false
+    }
+  },
+  // watch: {
+  //   darkTheme () {
+  //     if (this.darkTheme) {
+  //       document.documentElement.setAttribute('theme', 'dark')
+  //       localStorage.setItem('theme', 'dark')
+  //     } else {
+  //       document.documentElement.setAttribute('theme', 'light')
+  //       localStorage.setItem('theme', 'light')
+  //     }
+  //   }
+  // },
+  // created () {
+  //   if (localStorage.theme === 'dark') { this.darkTheme = true }
+  // }
+}
+</script>
+
+<style lang="sass">
+.card
+  position: relative
+  vertical-align: top
+  margin: 0 auto
+  width: 290px
+
+  &__toggle
+    position: absolute
+    top: 0
+    right: 0
+    -webkit-appearance: none
+    -moz-appearance: none
+    border: none
+    background: none
+    width: 36px
+    height: 20px
+    cursor: pointer
+
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      width: 44px
+      height: 28px
+      border: solid darkgrey 1px
+      border-radius: 20px
+      opacity: 1
+
+    &:after
+      content: url("../assets/img/card/color-mode.svg")
+      position: absolute
+      top: 3px
+      right: 3px
+      width: 24px
+      height: 24px
+      border-radius: 16px
+      -moz-transition: all 0.3s ease-out
+      -o-transition: all 0.3s ease-out
+      -webkit-transition: all 0.3s ease-out
+      transition: all 0.3s ease-out
+      pointer-events: none
+
+    &:checked.card__toggle:after
+      transform: translateX(-16px)
+
+  &__image
+    display: block
+    width: 290px
+    height: 290px
+    border-radius: 50%
+
+  &__social
+    display: flex
+    justify-content: space-between
+    list-style: none
+
+  &__link
+    display: inline-block
+    width: 60px
+    height: 60px
+    transition: opacity 0.6s
+    border-radius: 30px
+    margin: 12px 0 0 0
+
+    &--telegram
+      background: url("../assets/img/card/telegram.svg") no-repeat
+
+    &--twitter
+      background: url("../assets/img/card/twitter.svg") no-repeat
+
+    &--mail
+      background: url("../assets/img/card/mail.svg") no-repeat
+
+    &--instagram
+      background: url("../assets/img/card/instagram.svg") no-repeat
+
+    &--github
+      background: url("../assets/img/card/github.svg") no-repeat
+
+    &:hover, &:focus, &:active
+      opacity: 0.5
+</style>
