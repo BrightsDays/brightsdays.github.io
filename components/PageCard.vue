@@ -1,26 +1,27 @@
 <template>
-  <div v-if="$route.fullPath === '/'" class="card">
-<!--    <input-->
-<!--      v-model="darkTheme"-->
-<!--      class="card__toggle"-->
-<!--      type="checkbox"-->
-<!--    >-->
-<!--    <img class="card__image" src="../assets/img/card/vivanov.jpg" alt="vivanov">-->
-<!--    <div class="card__social">-->
-<!--      <a-->
-<!--        v-for="(item, i) in links"-->
-<!--        :key="i"-->
-<!--        class="card__link"-->
-<!--        :class="`card__link&#45;&#45;${item.class}`"-->
-<!--        :title="item.title"-->
-<!--        :href="item.url"-->
-<!--        :target="item.target"-->
-<!--      />-->
-<!--    </div>-->
+  <div class="card">
+    <input
+      class="card__toggle"
+      type="checkbox"
+      :checked="darkTheme"
+      @click="changeColorMode()"
+    />
+    <img class="card__image" src="../assets/img/card/vivanov.jpg" alt="vivanov">
+    <div class="card__social">
+      <a
+        v-for="(item, i) in links"
+        :key="i"
+        class="card__link"
+        :class="`card__link--${item.class}`"
+        :title="item.title"
+        :href="item.url"
+        :target="item.target"
+      />
+    </div>
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   data () {
     return {
@@ -53,20 +54,13 @@ export default {
       darkTheme: false
     }
   },
-  // watch: {
-  //   darkTheme () {
-  //     if (this.darkTheme) {
-  //       document.documentElement.setAttribute('theme', 'dark')
-  //       localStorage.setItem('theme', 'dark')
-  //     } else {
-  //       document.documentElement.setAttribute('theme', 'light')
-  //       localStorage.setItem('theme', 'light')
-  //     }
-  //   }
-  // },
-  // created () {
-  //   if (localStorage.theme === 'dark') { this.darkTheme = true }
-  // }
+  methods: {
+    changeColorMode () {
+      this.$colorMode.preference = this.$colorMode.preference === 'dark'
+        ? 'light'
+        : 'dark'
+    }
+  }
 }
 </script>
 
