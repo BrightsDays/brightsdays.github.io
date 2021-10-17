@@ -1,9 +1,7 @@
 <template>
   <div class="card">
-    <input
+    <button
       class="card__toggle"
-      type="checkbox"
-      :checked="darkTheme"
       @click="changeColorMode()"
     />
     <img class="card__image" src="../assets/img/card/vivanov.jpg" alt="vivanov">
@@ -50,8 +48,7 @@ export default {
           url: 'https://github.com/BrightsDays',
           target: '_blank'
         }
-      ],
-      darkTheme: false
+      ]
     }
   },
   methods: {
@@ -79,37 +76,9 @@ export default {
     -moz-appearance: none
     border: none
     background: none
-    width: 36px
-    height: 20px
+    width: 30px
+    height: 30px
     cursor: pointer
-
-    &:before
-      content: ''
-      position: absolute
-      top: 0
-      right: 0
-      width: 44px
-      height: 28px
-      border: solid darkgrey 1px
-      border-radius: 20px
-      opacity: 1
-
-    &:after
-      content: url("../assets/img/card/color-mode.svg")
-      position: absolute
-      top: 3px
-      right: 3px
-      width: 24px
-      height: 24px
-      border-radius: 16px
-      -moz-transition: all 0.3s ease-out
-      -o-transition: all 0.3s ease-out
-      -webkit-transition: all 0.3s ease-out
-      transition: all 0.3s ease-out
-      pointer-events: none
-
-    &:checked.card__toggle:after
-      transform: translateX(-16px)
 
   &__image
     display: block
@@ -147,4 +116,12 @@ export default {
 
     &:hover, &:focus, &:active
       opacity: 0.5
+
+.light-mode
+  .card__toggle
+    background: url("../assets/img/card/moon.svg")
+
+.dark-mode
+  .card__toggle
+    background: url("../assets/img/card/sun.svg")
 </style>
