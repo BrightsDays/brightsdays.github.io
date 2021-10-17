@@ -1,6 +1,6 @@
 ---
 title: Old School Deck - Dead Guy Ale
-description: 'Em'
+date: '04.10.2018'
 ---
 
 # Old School Deck: Dead Guy Ale

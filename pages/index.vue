@@ -88,6 +88,7 @@ export default {
   width: 1100px
   max-width: 100%
   gap: 30px
+
   @media ($tablet)
     padding: 15px 0
 
