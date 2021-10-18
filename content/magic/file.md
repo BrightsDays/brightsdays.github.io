@@ -1,6 +1,8 @@
 ---
 title: Old School Deck - Dead Guy Ale
 description: tyu
+category: magic
+categoryTitle: Magic the Gathering
 ---
 
 # Old School Deck: Dead Guy Ale

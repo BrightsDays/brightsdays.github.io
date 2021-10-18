@@ -1,6 +1,8 @@
 ---
 title: Old School Deck - Dead Guy Ale
 date: '04.10.2018'
+category: oldschool
+categoryTitle: Old School Magic
 ---
 
 # Old School Deck: Dead Guy Ale

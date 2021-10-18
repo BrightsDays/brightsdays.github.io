@@ -1,22 +1,22 @@
 <template>
   <vue-details class="blog" :title="'Мой блог'">
     <div class="blog__wrap">
-      <template v-for="list in postsLists">
-        <div :key="list.name" class="blog__section">
+      <div v-for="list in postsList" :key="list.title" class="blog__section">
+        <template v-if="list.posts[0]">
           <h3 class="heading--small">
-            {{ list.name }}
+            {{ list.title }}
           </h3>
           <ul class="list">
             <li
-              v-for="(item, i) in list.posts"
-              :key="i"
+              v-for="item in list.posts"
+              :key="item.name"
               class="list__item"
             >
               <a class="link" :href="item.path">{{ item.name }}</a>
             </li>
           </ul>
-        </div>
-      </template>
+        </template>
+      </div>
     </div>
   </vue-details>
 </template>
@@ -30,20 +30,13 @@ export default {
   },
   data () {
     return {
-      postsLists: {
-        oldSchoolList: {
-          name: 'Old School Magic',
-          posts: []
-        },
-        magicList: {
-          name: 'Magic: the Gathering',
-          posts: []
-        }
-      }
+      postsList: {},
+      tempList: {}
     }
   },
-  beforeMount () {
-    this.loadList()
+  async mounted () {
+    await this.loadList()
+    this.postsList = this.tempList
   },
   methods: {
     async loadList () {
@@ -52,14 +45,19 @@ export default {
         .fetch()
 
       list.forEach((item) => {
+        if (!(item.category in this.tempList)) {
+          this.tempList[item.category] = {
+            title: item.categoryTitle ?? item.category.charAt(0).toUpperCase() + item.category.slice(1),
+            posts: []
+          }
+        }
+
         const settings = {
           name: item.title ?? item.slug.charAt(0).toUpperCase() + item.slug.slice(1),
           path: item.path
         }
 
-        item.dir === '/magic'
-          ? this.postsLists.magicList.posts.push(settings)
-          : this.postsLists.oldSchoolList.posts.push(settings)
+        this.tempList[item.category].posts.push(settings)
       })
     }
   }
