@@ -19,8 +19,10 @@
   </div>
 </template>
 
-<script lang="js">
-export default {
+<script lang="ts">
+import { defineComponent } from '@vue/composition-api'
+
+export default defineComponent({
   data () {
     return {
       links: [
@@ -52,13 +54,15 @@ export default {
     }
   },
   methods: {
-    changeColorMode () {
-      this.$colorMode.preference = this.$colorMode.preference === 'dark'
+    changeColorMode (): string {
+      const colorMode: string = this.$colorMode.preference = this.$colorMode.preference === 'dark'
         ? 'light'
         : 'dark'
+
+      return colorMode
     }
   }
-}
+})
 </script>
 
 <style lang="sass">

@@ -1,7 +1,7 @@
 <template>
   <vue-details class="blog" :title="'Мой блог'">
     <div class="blog__wrap">
-      <div v-for="list in postsList" :key="list.title" class="blog__section">
+      <div v-for="list in library" :key="list.title" class="blog__section">
         <template v-if="list.posts[0]">
           <h3 class="heading--small">
             {{ list.title }}
@@ -21,47 +21,71 @@
   </vue-details>
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent } from '@vue/composition-api'
 import VueDetails from '../layouts/BlogDetails.vue'
 
-export default {
+interface Article {
+  slug: string,
+  title?: string,
+  category?: string,
+  categoryTitle?: string,
+  createdAt?: string,
+  dir?: string,
+  extension?: string,
+  path?: string,
+  toc?: object[]
+}
+interface Category {
+  title: string,
+  posts: object[]
+}
+interface Library {
+  library: {[s: string]: Category}
+}
+
+export default defineComponent({
   components: {
     VueDetails
   },
   data () {
     return {
-      postsList: {},
-      tempList: {}
-    }
+      library: {}
+    } as Library
   },
   async mounted () {
     await this.loadList()
-    this.postsList = this.tempList
   },
   methods: {
     async loadList () {
+      const tempList: {[s: string]: Category} = {}
+
       const list = await this.$content({ deep: true })
         .sortBy('createdAt', 'asc')
         .fetch()
 
-      list.forEach((item) => {
-        if (!(item.category in this.tempList)) {
-          this.tempList[item.category] = {
-            title: item.categoryTitle ?? item.category.charAt(0).toUpperCase() + item.category.slice(1),
-            posts: []
+      list.forEach((item: Article | undefined) => {
+        if (item) {
+          if (item.category && !(item.category in tempList)) {
+            tempList[item.category] = {
+              title: item.categoryTitle ?? item.category.charAt(0).toUpperCase() + item.category.slice(1),
+              posts: []
+            }
           }
-        }
 
-        const settings = {
-          name: item.title ?? item.slug.charAt(0).toUpperCase() + item.slug.slice(1),
-          path: item.path
-        }
+          const settings = {
+            name: item.title ?? item.slug.charAt(0).toUpperCase() + item.slug.slice(1),
+            path: item.path
+          }
 
-        this.tempList[item.category].posts.push(settings)
+          if (item.category) { tempList[item.category].posts.push(settings) }
+        }
       })
+
+      this.library = tempList
     }
   }
-}
+})
 </script>
 
 <style lang="sass">
