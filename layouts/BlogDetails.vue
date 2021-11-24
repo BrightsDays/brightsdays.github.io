@@ -14,8 +14,10 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from '@vue/composition-api'
+
+export default defineComponent({
   props: {
     title: { type: String, default: 'Title' }
   },
@@ -25,19 +27,19 @@ export default {
     }
   },
   computed: {
-    deviceType () {
+    deviceType (): string {
       return this.$store.state.adaptive.deviceType
     }
   },
   watch: {
-    deviceType () {
+    deviceType (): void {
       this.isOpen = this.deviceType === 'desktop'
     }
   },
-  mounted () {
+  mounted (): void {
     this.isOpen = this.deviceType === 'desktop'
   }
-}
+})
 </script>
 
 <style lang="sass">

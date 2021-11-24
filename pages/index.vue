@@ -58,20 +58,20 @@
           </li>
         </ul>
       </blog-details>
-      <page-blog />
+      <!--<page-blog />-->
     </div>
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import PageCard from '../components/PageCard.vue'
 import BlogDetails from '../layouts/BlogDetails.vue'
-import PageBlog from '../components/PageBlog.vue'
+// import PageBlog from '../components/PageBlog.vue'
 
 export default {
   components: {
     PageCard,
-    PageBlog,
+    // PageBlog,
     BlogDetails
   }
 }
