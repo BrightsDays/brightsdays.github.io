@@ -22,7 +22,8 @@ export default {
   ],
 
   plugins: [
-    '~/plugins/window.ts'
+    '~/plugins/window.ts',
+    '@/plugins/composition-api'
   ],
 
   components: true,
