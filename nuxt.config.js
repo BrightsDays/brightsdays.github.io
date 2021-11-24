@@ -1,7 +1,7 @@
 export default {
   target: 'static',
   router: {
-    base: 'brightsdays.github.io'
+    base: '/'
   },
 
   head: {
