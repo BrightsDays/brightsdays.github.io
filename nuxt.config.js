@@ -21,7 +21,7 @@ export default {
   },
 
   css: [
-    '~/assets/sass/main.sass'
+    '~/assets/scss/main.scss'
   ],
 
   plugins: [
@@ -34,10 +34,6 @@ export default {
   buildModules: [
     '@nuxt/typescript-build',
     '@nuxtjs/color-mode'
-  ],
-
-  modules: [
-    '@nuxt/content'
   ],
 
   content: {},

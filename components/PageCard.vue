@@ -65,67 +65,82 @@ export default defineComponent({
 })
 </script>
 
-<style lang="sass">
-.card
-  position: relative
-  vertical-align: top
-  margin: 0 auto
-  width: 290px
+<style lang="scss">
+.card {
+  position: relative;
+  vertical-align: top;
+  margin: 0 auto;
+  width: 290px;
 
-  &__toggle
-    position: absolute
-    top: 0
-    right: 0
-    -webkit-appearance: none
-    -moz-appearance: none
-    border: none
-    background: none
-    width: 30px
-    height: 30px
-    cursor: pointer
+  &__toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    background: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
 
-  &__image
-    display: block
-    width: 290px
-    height: 290px
-    border-radius: 50%
+  &__image {
+    display: block;
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+  }
 
-  &__social
-    display: flex
-    justify-content: space-between
-    list-style: none
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
 
-  &__link
-    display: inline-block
-    width: 60px
-    height: 60px
-    transition: opacity 0.6s
-    border-radius: 30px
-    margin: 12px 0 0 0
+  &__link {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    transition: opacity 0.6s;
+    border-radius: 30px;
+    margin: 12px 0 0 0;
 
-    &--telegram
-      background: url("../assets/img/card/telegram.svg") no-repeat
+    &--telegram {
+      background: url("../assets/img/card/telegram.svg") no-repeat;
+    }
 
-    &--twitter
-      background: url("../assets/img/card/twitter.svg") no-repeat
+    &--twitter {
+      background: url("../assets/img/card/twitter.svg") no-repeat;
+    }
 
-    &--mail
-      background: url("../assets/img/card/mail.svg") no-repeat
+    &--mail {
+      background: url("../assets/img/card/mail.svg") no-repeat;
+    }
 
-    &--instagram
-      background: url("../assets/img/card/instagram.svg") no-repeat
+    &--instagram {
+      background: url("../assets/img/card/instagram.svg") no-repeat;
+    }
 
-    &--github
-      background: url("../assets/img/card/github.svg") no-repeat
+    &--github {
+      background: url("../assets/img/card/github.svg") no-repeat;
+    }
 
-    &:hover, &:focus, &:active
-      opacity: 0.5
+    &:hover, &:focus, &:active {
+      opacity: 0.5;
+    }
+  }
+}
 
-.light-mode
-  .card__toggle
-    background: url("../assets/img/card/moon.svg")
+.light-mode {
+  .card__toggle {
+    background: url("../assets/img/card/moon.svg");
+  }
+}
 
-.dark-mode
-  .card__toggle
-    background: url("../assets/img/card/sun.svg")
+.dark-mode {
+  .card__toggle {
+    background: url("../assets/img/card/sun.svg");
+  }
+}
 </style>

@@ -42,43 +42,51 @@ export default defineComponent({
 })
 </script>
 
-<style lang="sass">
-.details
-  padding: 15px
-  border-top: 1px solid var(--summary)
-  border-bottom: 1px solid var(--summary)
-  margin-top: -1px
+<style lang="scss">
+.details {
+  padding: 15px;
+  border-top: 1px solid var(--summary);
+  border-bottom: 1px solid var(--summary);
+  margin-top: -1px;
 
-  &__summary
-    position: relative
-    list-style: none
-    font-size: 2.2em
-    font-weight: 500
-    cursor: pointer
-    transition: padding 0.3s
+  &__summary {
+    position: relative;
+    list-style: none;
+    font-size: 2.2em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: padding 0.3s;
 
-    &:before, &:after
-      content: ''
-      position: absolute
-      border-top: 2px solid var(--text)
-      transition: transform 0.4s
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      border-top: 2px solid var(--text);
+      transition: transform 0.4s;
+    }
 
-    &:before
-      top: 12px
-      right: 0
-      width: 15px
-      transform: rotate(-40deg)
+    &:before {
+      top: 12px;
+      right: 0;
+      width: 15px;
+      transform: rotate(-40deg);
+    }
 
-    &:after
-      top: 12px
-      right: 11px
-      width: 15px
-      transform: rotate(40deg)
+    &:after {
+      top: 12px;
+      right: 11px;
+      width: 15px;
+      transform: rotate(40deg);
+    }
 
-    &--open
-      &:before
-        transform: rotate(40deg)
+    &--open {
+      &:before {
+        transform: rotate(40deg);
+      }
 
-      &:after
-        transform: rotate(-40deg)
+      &:after {
+        transform: rotate(-40deg);
+      }
+    }
+  }
+}
 </style>
