@@ -39,9 +39,9 @@ export default defineComponent({
           target: ''
         },
         {
-          title: 'Instagram',
-          class: 'instagram',
-          url: 'https://instagram.com/brightsdays',
+          title: 'YouTube',
+          class: 'youtube',
+          url: 'https://www.youtube.com/brightsdaysmtg',
           target: '_blank'
         },
         {
@@ -118,8 +118,8 @@ export default defineComponent({
       background: url("../assets/img/card/mail.svg") no-repeat;
     }
 
-    &--instagram {
-      background: url("../assets/img/card/instagram.svg") no-repeat;
+    &--youtube {
+      background: url("../assets/img/card/youtube.svg") no-repeat;
     }
 
     &--github {
