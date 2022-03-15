@@ -2,22 +2,21 @@
   <div class="content">
     <div class="info">
       <h1 class="heading--big">
-        Привет! &#128075;
+        {{ $t('hello') }}! &#128075;
       </h1>
       <p class="paragraph">
-        Меня зовут Вячеслав, и я фронтенд-разработчик.
+        {{ $t('hello_content') }}
       </p>
     </div>
-    <blog-details :title="'Обо мне'">
+    <blog-details :title="$t('about')">
       <p class="paragraph">
-        Живу в Санкт-Петербурге, с начала 2020 работаю удаленно.
+        {{ $t('about_content_1') }}
       </p>
       <p class="paragraph">
-        Работаю с <b>Vue + Sass</b> - но использовал и другие сборщики, препроцессоры и шаблонизаторы;
-        немного писал на React.
+        {{ $t('about_content_2') }}
       </p>
       <p class="paragraph">
-        В свободное время я учусь исполнять блюз на губной гармонике и играю в настольную игру 93 года выпуска.
+        {{ $t('about_content_3') }}
       </p>
     </blog-details>
     <blog-details class="work" :title="'Опыт работы'">
@@ -25,16 +24,16 @@
         <li class="list__item">
           <ul class="work__info">
             <p>
-              <i>2021</i> - <b>ExtTeam</b>, Frontend Developer
+              <i>2021-2022</i> - <b>ExtTeam</b>, Frontend Developer
             </p>
             <p>
-              - Разработка портала для сотрудников компании-заказчика;
+              - {{ $t('work_content_1_1') }};
             </p>
             <p>
-              Разработка конструктора сайтов;
+              - {{ $t('work_content_1_2') }};
             </p>
             <p>
-              - В работе использовались VueJS, NuxtJS, Vuex, Vue Router, Vuetify, Webpack, Gulp, Pug, Jade, Stylus.
+              - {{ $t('work_content_1_3') }}.
             </p>
           </ul>
         </li>
@@ -44,13 +43,13 @@
               <i>2020-2021</i> - <b>AdCombo</b>, HTML/CSS Developer
             </p>
             <p>
-              - Верстка посадочных страниц, адаптивно и кросс браузерно;
+              - {{ $t('work_content_2_1') }};
             </p>
             <p>
-              - Создание слайдеров, навигации, параллакс-эффектов и других анимаций;
+              - {{ $t('work_content_2_2') }};
             </p>
             <p>
-              - В работе использовались Gulp, JS, Pug, SASS.
+              - {{ $t('work_content_2_3') }}.
             </p>
           </ul>
         </li>

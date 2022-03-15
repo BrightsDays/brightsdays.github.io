@@ -1,7 +1,13 @@
 <template>
   <div class="card">
+    <nuxt-link
+      :to="$route.path !== '/ru' ? switchLocalePath('ru') : switchLocalePath('en')"
+      class="card__language"
+    >
+      {{ $t('language') }}
+    </nuxt-link>
     <button
-      class="card__toggle"
+      class="card__color"
       @click="changeColorMode()"
     />
     <img class="card__image" src="../assets/img/card/vivanov.jpg" alt="vivanov">
@@ -72,7 +78,27 @@ export default defineComponent({
   margin: 0 auto;
   width: 290px;
 
-  &__toggle {
+  &__language {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    color: #A9A9A9;
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: none;
+    border: 3px solid #A9A9A9;
+    border-radius: 15px;
+  }
+
+  &__color {
     position: absolute;
     top: 0;
     right: 0;
@@ -133,13 +159,13 @@ export default defineComponent({
 }
 
 .light-mode {
-  .card__toggle {
+  .card__color {
     background: url("../assets/img/card/moon.svg");
   }
 }
 
 .dark-mode {
-  .card__toggle {
+  .card__color {
     background: url("../assets/img/card/sun.svg");
   }
 }
