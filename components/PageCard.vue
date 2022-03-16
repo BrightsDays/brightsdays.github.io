@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <nuxt-link
-      :to="$route.path !== '/ru' ? switchLocalePath('ru') : switchLocalePath('en')"
+      :to="$route.path.includes('/ru') ? switchLocalePath('en') : switchLocalePath('ru')"
       class="card__language"
     >
       {{ $t('language') }}
