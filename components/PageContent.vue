@@ -19,7 +19,7 @@
         {{ $t('about_content_3') }}
       </p>
     </blog-details>
-    <blog-details class="work" :title="'Опыт работы'">
+    <blog-details class="work" :title="$t('work')">
       <ul class="list">
         <li class="list__item">
           <ul class="work__info">

@@ -45,9 +45,9 @@ export default defineComponent({
           target: ''
         },
         {
-          title: 'YouTube',
-          class: 'youtube',
-          url: 'https://www.youtube.com/brightsdaysmtg',
+          title: 'LinkedIn',
+          class: 'linkedin',
+          url: 'https://www.linkedin.com/in/brightsdays',
           target: '_blank'
         },
         {
@@ -144,8 +144,8 @@ export default defineComponent({
       background: url("../assets/img/card/mail.svg") no-repeat;
     }
 
-    &--youtube {
-      background: url("../assets/img/card/youtube.svg") no-repeat;
+    &--linkedin {
+      background: url("../assets/img/card/linkedin.svg") no-repeat;
     }
 
     &--github {
