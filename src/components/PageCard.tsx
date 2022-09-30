@@ -33,6 +33,9 @@ const SocialItem = styled.a`
   transition: opacity 0.6s;
   border-radius: 30px;
   margin: 12px 0 0 0;
+  &:hover, &:focus, &:active {
+    opacity: 0.5;
+  }
 `
 
 const PageCard = () => {

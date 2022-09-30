@@ -1,3 +1,30 @@
+/* \:root {
+  --background: #ffffff;
+  --text: #000000;
+  --link: #157bc4;
+  --summary: #dfdfdf;
+  --opacity: rgba(223, 223, 223, 0.3);
+} */
+
+/* .light-mode {
+  --background: #ffffff;
+  --text: #000000;
+  --link: #157bc4;
+  --summary: #dfdfdf;
+}
+
+.dark-mode {
+  --background: #30363d;
+  --text: #ffffff;
+  --link: #d6983c;
+  --summary: #505660;
+} */
+
+/* body {
+  background: var(--background);
+  transition: background 0.3s;
+} */
+
 html,
 body {
   padding: 0;
@@ -21,6 +48,6 @@ a {
   }
   body {
     color: white;
-    background: black;
+    background: #30363d;
   }
 }
