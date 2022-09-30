@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "brightsdays-blog",
   "version": "1.0.0",
   "private": true,
@@ -42,5 +43,24 @@
     "ts-jest": "^27.0.3",
     "vue-jest": "^3.0.4",
     "webpack": "^4.46.0"
+=======
+  "name": "brightsdays.github.io",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "12.3.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "8.24.0",
+    "eslint-config-next": "12.3.1"
+>>>>>>> 8c3ed2f (Initial commit from Create Next App)
   }
 }
