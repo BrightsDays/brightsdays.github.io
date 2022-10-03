@@ -6,7 +6,7 @@ const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 40px 10px;
   width: 1100px;
   max-width: 100%;
   gap: 30px;
@@ -18,22 +18,44 @@ const Content = styled.div`
   margin: 0 auto;
 `
 
+const Navigation = styled.nav`
+  margin-bottom: 20px;
+  padding: 0 10px;
+`
+
+const NavText = styled.span`
+  font-size: 2.2em;
+  pointer-events: none;
+`
+
+const NavLink = styled.a`
+  font-size: 2.2em;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+`
+
 const Layout = ({ children }) => {
   return (
     <Container>
       <PageCard />
       <Content>
-        <nav>
+        <Navigation>
+          <NavText>&#123; </NavText>
           <Link href='/'>
-            <a>About</a>
+            <NavLink>about</NavLink>
           </Link>
+          <NavText>, </NavText>
           <Link href='/projects'>
-            <a>Projects</a>
+            <NavLink>projects</NavLink>
           </Link>
+          <NavText>, </NavText>
           <Link href='/contacts'>
-            <a>Contacts</a>
+            <NavLink>contacts</NavLink>
           </Link>
-        </nav>
+          <NavText> &#125;</NavText>
+        </Navigation>
         { children }
       </Content>
     </Container>
