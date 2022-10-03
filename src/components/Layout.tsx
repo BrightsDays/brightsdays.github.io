@@ -10,6 +10,10 @@ const Container = styled.div`
   width: 1100px;
   max-width: 100%;
   gap: 30px;
+  @media (max-width: 1059px) {
+    padding: 20px 10px;
+    gap: 15px;
+  }
 `
 
 const Content = styled.div`

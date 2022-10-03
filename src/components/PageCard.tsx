@@ -7,21 +7,46 @@ import github from '../../public/github.svg'
 import styled from 'styled-components'
 
 const Card = styled.div`
+  display: flex;
   position: relative;
+  flex-direction: column;
+  gap: 20px;
   vertical-align: top;
   margin: 0 auto;
   width: 290px;
+  @media (max-width: 1059px) {
+    width: 100%;
+    max-width: 720px;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 10px;
+    gap: 10px;
+  }
+  @media (max-width: 374px) {
+    justify-content: space-around;
+  }
 `
 
-const CardImage = styled(Image)`
-  display: block;
+const ImageWrapper = styled.div`
+  display: flex;
+  flex: 0 0 60px;
   width: 290px;
   height: 290px;
-  border-radius: 50%;
+  img {
+    border-radius: 50%;
+  }
+  @media (max-width: 1059px) {
+    width: 60px;
+    height: 60px;
+  }
+  @media (max-width: 374px) {
+    display: none;
+  }
 `
 
 const Social = styled.div`
   display: flex;
+  width: 290px;
   justify-content: space-between;
   list-style: none;
 `
@@ -32,7 +57,6 @@ const SocialItem = styled.a`
   height: 60px;
   transition: opacity 0.6s;
   border-radius: 30px;
-  margin: 12px 0 0 0;
   &:hover, &:focus, &:active {
     opacity: 0.5;
   }
@@ -66,29 +90,27 @@ const PageCard = () => {
     }
   ]
 
-  const LinkList = () => {
-    return (
-      links.map((link, index) =>
-        <SocialItem
-          key={`url_${index}`}
-          href={link.url}
-          title={link.title}
-          target={link.target}
-          style={{ background: `url(${link.image.src}) no-repeat` }}
-        />
-      )
-    )
-  }
+  const linkList = links.map((link, index) =>
+    <SocialItem
+      key={`url_${index}`}
+      href={link.url}
+      title={link.title}
+      target={link.target}
+      style={{ background: `url(${link.image.src}) no-repeat` }}
+    />
+  )
 
   return (
     <Card>
       {/* <button onClick={changeColorMode()} /> */}
-      <CardImage
-        src={profileImage}
-        alt="vivanov"
-      />
+      <ImageWrapper>
+        <Image
+          src={profileImage}
+          alt="vivanov"
+        />
+      </ImageWrapper>
       <Social>
-        <LinkList />
+        { linkList }
       </Social>
     </Card>
   )
