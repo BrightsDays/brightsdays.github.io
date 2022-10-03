@@ -19,7 +19,7 @@ const Content = styled.div`
 `
 
 const Navigation = styled.nav`
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   padding: 0 10px;
 `
 
