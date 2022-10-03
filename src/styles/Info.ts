@@ -30,7 +30,8 @@ const Info = styled.div`
     font-size: 1em;
     text-decoration: none;
     font-weight: 450;
-    color: var(--link);
+    color: #d6983c;
+    cursor: pointer;
 
     &:hover,
     &:focus,

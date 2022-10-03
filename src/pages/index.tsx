@@ -2,20 +2,40 @@ import Info from '../styles/Info'
 
 export default function Home() {
   return (
-    <>
-      <Info>
-        <h1>Hello! &#128075;</h1>
-        <p>My name is Viacheslav and I am Frontend Developer.</p>
-        <p>I&#39;m live in Tbilisi, Georgia. Have been working remotely since 2020.</p>
-        <p>Worked with Vue and SCSS, but also used other frameworks and preprocessors; I have uncommercial experience with React.</p>
-        <h2>Work experience</h2>
-        <p><b>2021-2022 - ExtTeam</b>, Frontend Developer</p>
-        <ul>
-          <li>- Development of an intranet for a customer company;</li>
-          <li>- Development of a landing pages constructor;</li>
-          <li>- VueJS, NuxtJS, Vuex, Vue Router, Vuetify, Webpack, Gulp, Pug, Jade, Stylus were used.</li>
-        </ul>
-      </Info>
-    </>
+    <Info>
+      <h1>Hello! &#128075;</h1>
+
+      <p>My name is Viacheslav, currently I live in Tbilisi &#127468;&#127466;.</p>
+      <p>
+        I participated in creating a corporate portal, admin panels and landing pages 
+        constructor with Vue.js and Nuxt; also I have two years of experience in page 
+        templates development and few month of work with React.
+      </p>
+      <h2>ExtTeam (2021-2022)</h2>
+      <p>
+        Here I create an intranet portal and landing page constructor for big trademark; 
+        also I helped to fix or complete tasks on diffirent teams projects.
+        <br/>On intranet I worked with admin panel and user&#39;s personal page, that includes 
+        business calendar, task list and information board.
+        <br/>Much more time I gived to landing page constructor. We had small team and 
+        short time here, so constructor had not big lot of options - but was simple and
+        helps to create big number of diffirent pages.
+      </p>
+      <h2>AdCombo (2020-2021)</h2>
+      <p>
+        I created marketing landing pages - sometimes with modern animations and 
+        interactive forms, sometimes quite simple. Also I update old templates an fix bugs in them. 
+        <br/>This was my first web development experience and I got more familiar with JavaScript and 
+        frameworks - but don&#39;t like the client&#39;s products so I left the place.
+      </p>
+      <h2>GlassFurnitura (2017-2020)</h2>
+      <p>
+        Here I worked as a web administrator: monitored the state of the company&#39;s 
+        stores and content pages, created content, worked with the product database and 
+        communicated with freelancers.
+        <br/>I also updated e-commerce templates, created simple 
+        landing pages, learned HTML/CSS, and used jQuery to bring the pages to life.
+      </p>
+    </Info>
   )
 }
