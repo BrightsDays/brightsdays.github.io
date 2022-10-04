@@ -1,9 +1,13 @@
 import Info from '../styles/Info'
-import Image from 'next/image'
+import Head from 'next/head'
 
 const Projects = () => {
   return (
     <Info>
+      <Head>
+        <title>BrightsDays - projects</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <h1>Projects</h1>
       <a
         href="https://brightsdays.github.io/mausritter-online-sheet/"

@@ -1,8 +1,13 @@
 import Info from '../styles/Info'
+import Head from 'next/head'
 
 export default function Home() {
   return (
     <Info>
+      <Head>
+        <title>BrightsDays - about</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <h1>Hello! &#128075;</h1>
 
       <p>My name is Viacheslav, currently I live in Tbilisi &#127468;&#127466;.</p>

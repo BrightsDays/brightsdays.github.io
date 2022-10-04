@@ -1,8 +1,13 @@
 import Info from '../styles/Info'
+import Head from 'next/head'
 
 const Contacts = () => {
   return (
     <Info>
+      <Head>
+        <title>BrightsDays - contacts</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <h1>Contacts</h1>
       <p>
         Fastest way to communicate with me is a messengers
