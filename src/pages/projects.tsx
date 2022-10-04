@@ -28,8 +28,8 @@ const Projects = () => {
         about <a
           href="http://oldschool-mtg.blogspot.com/"
           target="_blank"
-          rel="noreferrer">Old School Magic</a> - a popular board game 
-        format. Sometimes it&#39;s game records and sometimes nostalgic stories; if you are 
+          rel="noreferrer">Old School Magic</a> - a format of popular board game. 
+          Sometimes it&#39;s game records and sometimes nostalgic stories; if you are 
         fan of retro games or Magic: the Gathering, you might like it.
       </p>
     </Info>
