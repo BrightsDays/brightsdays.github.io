@@ -29,6 +29,7 @@ const Card = styled.div`
 
 const ImageWrapper = styled.div`
   display: flex;
+  position: fixed;
   flex: 0 0 60px;
   width: 290px;
   height: 290px;
@@ -36,6 +37,7 @@ const ImageWrapper = styled.div`
     border-radius: 50%;
   }
   @media (max-width: 1059px) {
+    position: static;
     width: 60px;
     height: 60px;
   }
@@ -46,9 +48,14 @@ const ImageWrapper = styled.div`
 
 const Social = styled.div`
   display: flex;
+  position: fixed;
+  top: 340px;
   width: 290px;
   justify-content: space-between;
   list-style: none;
+  @media (max-width: 1059px) {
+    position: static;
+  }
 `
 
 const SocialItem = styled.a`

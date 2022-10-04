@@ -4,6 +4,7 @@ import Link from 'next/link'
 
 const Container = styled.div`
   display: flex;
+  position: relative;
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 40px 10px;
