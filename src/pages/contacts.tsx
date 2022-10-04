@@ -9,13 +9,13 @@ const Contacts = () => {
         - <a 
           href="https://t.me/brightsdays" 
           target="_blank" 
-          rel='noreferrer'>Telegram</a> 
-        or <a 
+          rel='noreferrer'>
+            Telegram</a> or <a 
           href="https://api.whatsapp.com/send/?phone=995591100321" 
           target="_blank" 
           rel='noreferrer'>WhatsApp</a>.
       </p>
-      <p>You also can send a letter 
+      <p>You also can send me a letter 
         to <a 
           href="mailto:brightsdayss@mail.com" 
           target="_blank" 

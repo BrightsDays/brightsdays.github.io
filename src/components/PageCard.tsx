@@ -49,7 +49,7 @@ const ImageWrapper = styled.div`
 const Social = styled.div`
   display: flex;
   position: fixed;
-  top: 340px;
+  top: 350px;
   width: 290px;
   justify-content: space-between;
   list-style: none;
