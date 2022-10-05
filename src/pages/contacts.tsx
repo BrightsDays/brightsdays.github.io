@@ -40,6 +40,10 @@ const Contacts = () => {
           href="https://www.instagram.com/brightsdays" 
           target="_blank" 
           rel='noreferrer'>Instagram</a></li>
+        <li>- <a
+          href="https://www.github.com/brightsdays" 
+          target="_blank" 
+          rel='noreferrer'>Github</a></li>
       </ul>
     </Info>
   )

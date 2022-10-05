@@ -23,7 +23,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   a {
-    color: inherit;
+    color: ${props => props.theme.text};
     text-decoration: none;
   }
 `

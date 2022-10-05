@@ -50,6 +50,7 @@ const NavText = styled.span`
 const NavLink = styled.a`
   font-size: 2.2em;
   cursor: pointer;
+  color: ${props => props.theme.link};
   &:hover {
     text-decoration: underline;
   }

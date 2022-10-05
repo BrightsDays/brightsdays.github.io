@@ -7,21 +7,24 @@ const Info = styled.div`
   }
 
   h1 {
-    margin-top: 0;
+    margin-bottom: 1em;
     font-size: 3em;
     font-weight: 600;
   }
 
   h2 {
-    margin-top: 1em;
+    margin: 1em 0;
     font-size: 2.2em;
     font-weight: 500;
   }
 
   p {
-    margin-top: 1em;
+    margin-top: 0.3em;
     font-size: 1.8em;
     line-height: 1.7em;
+    @media (max-width: 499px) {
+      text-align: justify;
+    }
   }
 
   b,i {

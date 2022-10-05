@@ -9,10 +9,10 @@ const Projects = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <h1>Projects</h1>
-      <a
+      <h2><a
         href="https://brightsdays.github.io/mausritter-online-sheet/"
         target="_blank"
-        rel="noreferrer"><h2>Mouseritter online sheet</h2></a>
+        rel="noreferrer">Mouseritter online sheet</a></h2>
       <p>
         It is a constructor for build and use characters in Mausritter - a role playing game 
         by <a
@@ -21,12 +21,12 @@ const Projects = () => {
           rel="noreferrer"
         >Losing Games</a>. Currently it&#39;s even not demo and you can only create a 
         character and slightly edit stats and inventory - but I work on it.
-        <br/>If you want to participate in this project - contact me!
+        </p><p>If you want to participate in this project - contact me!
       </p>
-      <a
+      <h2><a
         href="https://www.youtube.com/brightsdaysmtg"
         target="_blank"
-        rel="noreferrer"><h2>brightsdaysmtg</h2></a>
+        rel="noreferrer">brightsdaysmtg</a></h2>
       <p>
         On this YouTube channel, I post videos 
         about <a
