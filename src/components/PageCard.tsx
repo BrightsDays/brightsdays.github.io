@@ -22,15 +22,12 @@ const Card = styled.div`
     padding: 0 10px;
     gap: 10px;
   }
-  @media (max-width: 374px) {
-    justify-content: space-around;
-  }
 `
 
 const ImageWrapper = styled.div`
   display: flex;
   position: fixed;
-  flex: 0 0 60px;
+  flex: 0 0 40px;
   width: 290px;
   height: 290px;
   img {
@@ -38,11 +35,8 @@ const ImageWrapper = styled.div`
   }
   @media (max-width: 1059px) {
     position: static;
-    width: 60px;
-    height: 60px;
-  }
-  @media (max-width: 374px) {
-    display: none;
+    width: 40px;
+    height: 40px;
   }
 `
 
@@ -55,6 +49,7 @@ const Social = styled.div`
   list-style: none;
   @media (max-width: 1059px) {
     position: static;
+    width: 200px;
   }
 `
 
@@ -63,9 +58,15 @@ const SocialItem = styled.a`
   width: 60px;
   height: 60px;
   transition: opacity 0.6s;
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 30px;
   &:hover, &:focus, &:active {
     opacity: 0.5;
+  }
+  @media (max-width: 1059px) {
+    width: 40px;
+    height: 40px;
   }
 `
 
@@ -103,7 +104,7 @@ const PageCard = () => {
       href={link.url}
       title={link.title}
       target={link.target}
-      style={{ background: `url(${link.image.src}) no-repeat` }}
+      style={{ backgroundImage: `url(${link.image.src})` }}
     />
   )
 
