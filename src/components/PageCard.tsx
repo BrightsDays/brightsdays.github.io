@@ -22,6 +22,9 @@ const Card = styled.div`
     padding: 0 10px;
     gap: 10px;
   }
+  @media (max-width: 499px) {
+    padding: 0;
+  }
 `
 
 const ImageWrapper = styled.div`

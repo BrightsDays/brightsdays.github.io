@@ -2,6 +2,9 @@ import styled from 'styled-components'
 
 const Info = styled.div`
   padding: 0 10px;
+  @media (max-width: 499px) {
+    padding: 0;
+  }
 
   h1 {
     margin-top: 0;

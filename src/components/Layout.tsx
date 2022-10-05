@@ -15,6 +15,9 @@ const Container = styled.div`
     padding: 20px 10px;
     gap: 15px;
   }
+  @media (max-width: 499px) {
+    padding: 10px 10px 40px;
+  }
 `
 
 const Content = styled.div`
@@ -26,26 +29,24 @@ const Content = styled.div`
 const Navigation = styled.nav`
   margin-bottom: 40px;
   padding: 0 10px;
+  @media (max-width: 499px) {
+    margin-bottom: 20px;
+    padding: 0;
+    text-align: center;
+  }
 `
 
 const NavText = styled.span`
   font-size: 2.2em;
   font-weight: 500;
   pointer-events: none;
-  @media (max-width: 1059px) {
-    font-size: 2em;
-  }
 `
 
 const NavLink = styled.a`
   font-size: 2.2em;
-  font-weight: 500;
   cursor: pointer;
   &:hover {
     text-decoration: underline;
-  }
-  @media (max-width: 1059px) {
-    font-size: 2em;
   }
 `
 
@@ -55,7 +56,7 @@ const Layout = ({ children }) => {
       <PageCard />
       <Content>
         <Navigation>
-          <NavText>nav: &#123; </NavText>
+          <NavText>&#123; </NavText>
           <Link href='/'>
             <NavLink>about</NavLink>
           </Link>
