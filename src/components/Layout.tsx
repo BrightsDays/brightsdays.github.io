@@ -1,6 +1,11 @@
 import PageCard from './PageCard'
 import styled from 'styled-components'
 import Link from 'next/link'
+import { ThemeProvider } from 'styled-components'
+import { useSelector } from 'react-redux'
+import { getThemeState } from '../store/themeSlice'
+import { darkTheme, lightTheme } from '../styles/Theme'
+import GlobalStyles from '../styles/GlobalStyles'
 
 const Container = styled.div`
   display: flex;
@@ -51,28 +56,33 @@ const NavLink = styled.a`
 `
 
 const Layout = ({ children }) => {
+  const { theme } = useSelector(getThemeState)
+
   return (
-    <Container>
-      <PageCard />
-      <Content>
-        <Navigation>
-          <NavText>&#123; </NavText>
-          <Link href='/'>
-            <NavLink>about</NavLink>
-          </Link>
-          <NavText>, </NavText>
-          <Link href='/projects'>
-            <NavLink>projects</NavLink>
-          </Link>
-          <NavText>, </NavText>
-          <Link href='/contacts'>
-            <NavLink>contacts</NavLink>
-          </Link>
-          <NavText> &#125;</NavText>
-        </Navigation>
-        { children }
-      </Content>
-    </Container>
+    <ThemeProvider theme={theme === 'dark' ? darkTheme : lightTheme}>
+      <GlobalStyles />
+      <Container>
+        <PageCard />
+        <Content>
+          <Navigation>
+            <NavText>&#123; </NavText>
+            <Link href='/'>
+              <NavLink>about</NavLink>
+            </Link>
+            <NavText>, </NavText>
+            <Link href='/projects'>
+              <NavLink>projects</NavLink>
+            </Link>
+            <NavText>, </NavText>
+            <Link href='/contacts'>
+              <NavLink>contacts</NavLink>
+            </Link>
+            <NavText> &#125;</NavText>
+          </Navigation>
+          { children }
+        </Content>
+      </Container>
+    </ThemeProvider>
   )
 }
 

@@ -33,7 +33,7 @@ const Info = styled.div`
     font-size: 1em;
     text-decoration: none;
     font-weight: 450;
-    color: #d6983c;
+    color: ${props => props.theme.link};
     cursor: pointer;
 
     &:hover,

@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <Info>
       <Head>
-        <title>BrightsDays - about</title>
+        <title>BrightsDays</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <h1>Hello! &#128075;</h1>
