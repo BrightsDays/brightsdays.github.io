@@ -19,8 +19,10 @@ const Projects = () => {
           href="https://losing.games"
           target="_blank"
           rel="noreferrer"
-        >Losing Games</a>. Currently it&#39;s even not demo and you can only create a 
-        character and slightly edit stats and inventory - but I work on it.
+        >Losing Games</a>. Currently it&#39;s a demo version without images, where you can 
+        create and edit a character. In near future I will upload images, fix the visual for 
+        mobile platforms and create a full character editor (for use a ready-made mouse 
+        in application).
         </p><p>If you want to participate in this project - contact me!
       </p>
       <h2><a
