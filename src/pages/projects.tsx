@@ -14,15 +14,12 @@ const Projects = () => {
         target="_blank"
         rel="noreferrer">Mouseritter online sheet</a></h2>
       <p>
-        It is a constructor for build and use characters in Mausritter - a role playing game 
-        by <a
+      It’s a constructor for creating and using on your PC characters in the “Mausritter” 
+      - a role playing game by <a
           href="https://losing.games"
           target="_blank"
           rel="noreferrer"
-        >Losing Games</a>. Currently it&#39;s a demo version without images, where you can 
-        create and edit a character. In near future I will upload images, fix the visual for 
-        mobile platforms and create a full character editor (for use a ready-made mouse 
-        in application).
+        >Losing Games</a>. Currently posted as a demo version.
         </p><p>If you want to participate in this project - contact me!
       </p>
       <h2><a
