@@ -166,6 +166,7 @@ const PageCard = () => {
         <ThemeToggler
           style={{ backgroundImage: `url(${togglerImage.src})` }}
           onClick={onClick}
+          aria-label='theme-toggler'
         />
         <Image
           src={profileImage}

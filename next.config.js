@@ -6,8 +6,12 @@ const nextConfig = {
     styledComponents: true,
   },
   images: {
-    unoptimized: true
-  }
+    unoptimized: true,
+  },
+  i18n: {
+    locales: ['en'],
+    defaultLocale: 'en',
+  },
 }
 
 module.exports = nextConfig

@@ -10,7 +10,7 @@ const Contacts = () => {
       </Head>
       <h1>Contacts</h1>
       <p>
-        Fastest way to communicate with me is a messengers
+        The fastest way to contact me is a messengers
         - <a 
           href="https://t.me/brightsdays" 
           target="_blank" 
@@ -20,12 +20,12 @@ const Contacts = () => {
           target="_blank" 
           rel='noreferrer'>WhatsApp</a>.
       </p>
-      <p>You also can send me a letter 
-        to <a 
+      <p>You can also email me 
+        at <a 
           href="mailto:brightsdayss@mail.com" 
           target="_blank" 
           rel='noreferrer'>brightsdayss@gmail.com</a>, 
-        I check it at regular.</p>
+        I check it regularly.</p>
       <p>And of course social networks:</p>
       <ul>
         <li>- <a

@@ -9,31 +9,35 @@ const Projects = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <h1>Projects</h1>
-      <h2><a
+      <h2>
+        <a
         href="https://brightsdays.github.io/mausritter-online-sheet/"
         target="_blank"
-        rel="noreferrer">Mouseritter online sheet</a></h2>
+        rel="noreferrer">Mauseritter online sheet</a>
+      </h2>
       <p>
-      It’s a constructor for creating and using on your PC characters in the “Mausritter” 
-      - a role playing game by <a
+        This is a constructor for creating and using characters in Mauseritter, 
+        a role-playing game about mouse adventurers from <a
           href="https://losing.games"
           target="_blank"
           rel="noreferrer"
-        >Losing Games</a>. Currently posted as a demo version.
-        </p><p>If you want to participate in this project - contact me!
+        >Losing Games</a>.
+      </p>
+      <p>
+        Currently posted as a demo version.
       </p>
       <h2><a
         href="https://www.youtube.com/brightsdaysmtg"
         target="_blank"
-        rel="noreferrer">brightsdaysmtg</a></h2>
+        rel="noreferrer">Brightsdaysmtg</a></h2>
       <p>
         On this YouTube channel, I post videos 
         about <a
           href="http://oldschool-mtg.blogspot.com/"
           target="_blank"
-          rel="noreferrer">Old School Magic</a> - a format of popular board game. 
-          Sometimes it&#39;s game records and sometimes nostalgic stories; if you are 
-        fan of retro games or Magic: the Gathering, you might like it.
+          rel="noreferrer">Old School Magic</a> - a popular board game format. 
+          Sometimes these are game records, and sometimes nostalgic stories; if you are 
+        fan of retro games or Magic: the Gathering, you might like this.
       </p>
     </Info>
   )

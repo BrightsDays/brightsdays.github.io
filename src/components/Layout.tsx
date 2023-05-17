@@ -67,15 +67,24 @@ const Layout = ({ children }) => {
         <Content>
           <Navigation>
             <NavText>&#123; </NavText>
-            <Link href='/'>
+            <Link
+              prefetch={false}
+              href='/'
+            >
               <NavLink>about</NavLink>
             </Link>
             <NavText>, </NavText>
-            <Link href='/projects'>
+            <Link
+              prefetch={false}
+              href='/projects'
+            >
               <NavLink>projects</NavLink>
             </Link>
             <NavText>, </NavText>
-            <Link href='/contacts'>
+            <Link
+              prefetch={false}
+              href='/contacts'
+            >
               <NavLink>contacts</NavLink>
             </Link>
             <NavText> &#125;</NavText>

@@ -10,6 +10,7 @@
     "deploy": "next build && next export && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out brightsdays.github.io gh-pages"
   },
   "dependencies": {
+    "@next/bundle-analyzer": "^13.4.2",
     "@reduxjs/toolkit": "^1.8.5",
     "next": "12.3.1",
     "react": "18.2.0",

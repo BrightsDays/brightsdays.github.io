@@ -13,7 +13,7 @@ const Info = styled.div`
   }
 
   h2 {
-    margin: 1em 0;
+    margin: 1em 0 0.6em 0;
     font-size: 2.2em;
     font-weight: 500;
   }
