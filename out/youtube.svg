@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path d="M448,512l-384,0c-35.328,0 -64,-28.672 -64,-64l0,-384c0,-35.328 28.672,-64 64,-64l384,0c35.328,0 64,28.672 64,64l0,384c0,35.328 -28.672,64 -64,64Z" id="Dark_Blue" style="fill:#157bc4;fill-rule:nonzero;"/>
+    <path xmlns="http://www.w3.org/2000/svg" d="M 427.838 169.354 C 423.584 153.864 411.295 141.664 395.778 137.524 C 367.649 130 255.08 130 255.08 130 C 255.08 130 142.51 130 114.492 137.524 C 99.036 141.664 86.919 153.864 82.898 169.354 C 75.579 197.422 76.005 256 76.005 256 C 76.005 256 76.434 314.578 84.166 342.646 C 88.416 358.136 100.709 370.336 116.222 374.476 C 144.355 382 256.916 382 256.916 382 C 256.916 382 369.494 382 397.504 374.476 C 412.968 370.336 425.077 358.136 429.098 342.646 C 436.417 314.578 435.995 256 435.995 256 C 435.995 256 435.562 197.422 427.838 169.354 Z M 220.393 310.002 L 219.603 201.998 L 313.522 256 L 220.393 310.002 Z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1; fill: rgb(255, 255, 255);" stroke-linecap="round"/>
+  </g>
+</svg>
