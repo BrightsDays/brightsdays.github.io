@@ -70,7 +70,7 @@ const SocialItem = styled.a`
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 30px;
-  &:hover, &:focus, &:active {
+  &:hover {
     opacity: 0.5;
   }
   @media (max-width: 1059px) {
@@ -157,8 +157,8 @@ const PageCard = () => {
   )
 
   const togglerImage = theme === 'dark'
-    ? sun
-    : moon
+    ? moon
+    : sun
 
   return (
     <Card>

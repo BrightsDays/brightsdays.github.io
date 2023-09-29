@@ -10,44 +10,39 @@ export default function Home() {
       </Head>
       <h1>Hello! &#128075;</h1>
 
-      <p>My name is Viacheslav, at the moment I live in Batumi &#127468;&#127466;.</p>
-      <p>
-        I&#39;m a Frontend Developer with 3 years of experience. 
-      </p>
-      <p>Building apps with Vue.js since 2021.
-      </p>
-      <h2>Sidus Games (from 2022)</h2>
-      <p>
-        Currently I working on frontend part of futuristic NFT gaming universe.
-      </p>
-      <p>
-        Players can trade, fight and build communities in outer space.
-        <br/>
-        The games use a variety of modern technologies and gaming tools to guarantee 
-        players an amazing journey through the blockchain, full of adventure and 
-        opportunity.
-      </p>
-      <h2>ExtTeam (2021-2022)</h2>
-      <p>
-        Here I created an intranet portal and landing page builder for a customer.
-      </p>
-      <p>
-        On the intranet, I worked with the admin panel and the user&#39;s personal page, 
-        which includes a business calendar, a to-do list, and a bulletin board.
-      </p>
-      <p>
-        I spent much more time on the landing page builder. It didn&#39;t have many options, 
-        but it was simple and allowed you to create a lot of different pages.
-      </p>
-      <h2>AdCombo (2020-2021)</h2>
-      <p>
-        I have created marketing landing pages, sometimes with modern animations and 
-        interactive forms, sometimes quite simple. 
-      </p>
-      <p>
-      This was my first web development experience and I got more familiar with 
-      JavaScript and frameworks, but I didn&#39;t like the new client products so I left.
-      </p>
+      <p>I&#39;m Viacheslav, currently based in Tbilisi&nbsp;&#127468;&#127466;, and I&#39;m a Frontend Developer with 3 years of experience. I specialize in Vue.js development since 2021.</p>
+     
+      <h2>Work Experience</h2>
+      <h3><a
+        href="https://www.sidusheroes.com"
+        target="_blank"
+        rel="noreferrer">Sidus Games</a> (2022 - 2023)</h3>
+      <p>Company is a creator of NFT MMORPG games. Here am I:</p>
+      <ul>
+        <li>Collaborated cross-functionally to design and implement responsive browser game components using Vue.js.</li>
+        <li>Developed custom Vue, React, and Svelte components, integrating third-party libraries for enhanced user interfaces.</li>
+        <li>Created promotional landing pages and informational websites for the games, driving engagement and player interest.</li>
+      </ul>
+      
+      <h3><a
+        href="https://extteam.ru/"
+        target="_blank"
+        rel="noreferrer">ExtTeam</a> (2021 - 2022)</h3>
+      <p>At ExtTeam, I played a pivotal role in the creation of an intranet portal and landing page constructor. My contributions included:</p>
+      <ul>
+        <li>Development of key features for the intranet portal, including a calendar, personal area, information pop-ups, maps, and various UI components.</li>
+        <li>Crafting page components, tables, forms, personal areas, and administration panels, ensuring a seamless user experience.</li>
+      </ul>
+
+      <h3><a
+        href="https://adcombo.com/"
+        target="_blank"
+        rel="noreferrer">AdCombo</a> (2020 - 2021)</h3>
+      <p>At AdCombo, a company specializing in marketing page development, my responsibilities as a Frontend Developer encompassed:</p>
+      <ul>
+        <li>Designing and implementing numerous engaging landing pages to meet client requirements.</li>
+        <li>Diligently resolving issues and enhancing the performance of existing templates, ensuring optimal functionality and user satisfaction.</li>
+      </ul>
     </Info>
   )
 }

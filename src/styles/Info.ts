@@ -14,6 +14,12 @@ const Info = styled.div`
 
   h2 {
     margin: 1em 0 0.6em 0;
+    font-size: 2.6em;
+    font-weight: 500;
+  }
+  
+  h3 {
+    margin: 1em 0 0.6em 0;
     font-size: 2.2em;
     font-weight: 500;
   }
@@ -22,9 +28,6 @@ const Info = styled.div`
     margin-top: 0.3em;
     font-size: 1.8em;
     line-height: 1.7em;
-    @media (max-width: 499px) {
-      text-align: justify;
-    }
   }
 
   b,i {
@@ -39,21 +42,29 @@ const Info = styled.div`
     color: ${props => props.theme.link};
     cursor: pointer;
 
-    &:hover,
-    &:focus,
-    &:active {
+    &:hover {
       text-decoration: underline;
     }
   }
 
   ul {
     list-style: none;
+    padding-left: 15px;
     min-width: 280px;
   }
 
   li {
+    position: relative;
     margin-top: 0.5em;
     font-size: 1.8em;
+
+    &:before {
+      content: '\\2022';
+      position: absolute;
+      left: -15px;
+      color: ${props => props.theme.link};
+      font-weight: bold;
+    }
   }
 `
 

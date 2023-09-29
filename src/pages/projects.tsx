@@ -9,35 +9,34 @@ const Projects = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <h1>Projects</h1>
-      <h2>
+      <h3>
         <a
         href="https://brightsdays.github.io/mausritter-online-sheet/"
         target="_blank"
-        rel="noreferrer">Mauseritter online sheet</a>
-      </h2>
+        rel="noreferrer">Mauseritter Online Sheet</a>
+      </h3>
       <p>
-        This is a constructor for creating and using characters in Mauseritter, 
-        a role-playing game about mouse adventurers from <a
+        Mauseritter Online Sheet is a character creation and management tool designed for 
+        Mauseritter, an engaging role-playing game centered around brave mouse adventurers 
+        from <a
           href="https://losing.games"
           target="_blank"
           rel="noreferrer"
-        >Losing Games</a>.
+        >Losing Games</a>. Currently, it&#39;s available as a demo version, allowing 
+        players to experience the world of Mauseritter.
       </p>
-      <p>
-        Currently posted as a demo version.
-      </p>
-      <h2><a
+      <h3><a
         href="https://www.youtube.com/brightsdaysmtg"
         target="_blank"
-        rel="noreferrer">Brightsdaysmtg</a></h2>
+        rel="noreferrer">Brightsdaysmtg YouTube Channel</a></h3>
       <p>
-        On this YouTube channel, I post videos 
-        about <a
+        Welcome to Brightsdaysmtg, where I share captivating content dedicated to <a
           href="http://oldschool-mtg.blogspot.com/"
           target="_blank"
-          rel="noreferrer">Old School Magic</a> - a popular board game format. 
-          Sometimes these are game records, and sometimes nostalgic stories; if you are 
-        fan of retro games or Magic: the Gathering, you might like this.
+          rel="noreferrer">Old School Magic</a>. On this channel, you&#39;ll find a 
+          variety of videos, including game recordings and nostalgic tales. If you have a
+           passion for retro games or are a Magic: the Gathering enthusiast, you&#39;re 
+           sure to find something enjoyable here.
       </p>
     </Info>
   )
