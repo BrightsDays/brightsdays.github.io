@@ -6,8 +6,6 @@ export default defineConfig({
   site: 'https://brightsdays.github.io',
   scopedStyleStrategy: 'class',
   output: 'hybrid',
-  publicDir: 'static',
-  outDir: 'public',
   adapter: node({
     mode: 'standalone',
   }),
