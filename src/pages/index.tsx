@@ -17,7 +17,7 @@ export default function Home() {
         href="https://www.sidusheroes.com"
         target="_blank"
         rel="noreferrer">Sidus Games</a> (2022 - 2023)</h3>
-      <p>Company is a creator of NFT MMORPG games. Here am I:</p>
+      <p>A company specializing in the creation of NFT-based games. In this dynamic environment, I:</p>
       <ul>
         <li>Collaborated cross-functionally to design and implement responsive browser game components using Vue.js.</li>
         <li>Developed custom Vue, React, and Svelte components, integrating third-party libraries for enhanced user interfaces.</li>
