@@ -4,3 +4,25 @@ $lg: 1024px;
 $md: 768px;
 $sm: 640px;
 $spec: 499px;
+
+\:root {
+  --background: #ffffff;
+  --text: #000000;
+  --link: #157bc4;
+  --summary: #dfdfdf;
+  --opacity: rgba(223, 223, 223, 0.3);
+}
+
+.light {
+  --background: #ffffff;
+  --text: #000000;
+  --link: #157bc4;
+  --summary: #dfdfdf;
+}
+
+.dark {
+  --background: #30363d;
+  --text: #ffffff;
+  --link: #d6983c;
+  --summary: #505660;
+}

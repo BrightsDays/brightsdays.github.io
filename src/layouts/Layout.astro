@@ -46,6 +46,7 @@ const { title } = Astro.props
         Droid Sans,
         Helvetica Neue,
         sans-serif;
+      background: var(--background);
     }
 
     * {
@@ -53,8 +54,7 @@ const { title } = Astro.props
       padding: 0;
       font-family: 'Open Sans', sans-serif;
       font-size: 10px;
-      // color: ${props => props.theme.text};
-      color: black;
+      color: var(--text);
       box-sizing: border-box;
       outline: none;
     }
@@ -66,8 +66,7 @@ const { title } = Astro.props
     }
 
     a {
-      // color: ${props => props.theme.text};
-      color: blue;
+      color: var(--link);
       text-decoration: none;
     }
 

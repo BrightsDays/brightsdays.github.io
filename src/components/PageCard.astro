@@ -1,4 +1,6 @@
 ---
+import ThemeToggle from './ThemeToggle.astro'
+
 const links = [
   {
     title: 'Telegram',
@@ -29,11 +31,7 @@ const links = [
 
 <div class="card">
   <div class="wrap">
-    <!-- <ThemeToggler
-      style={{ backgroundImage: `url(${togglerImage.src})` }}
-      onClick={onClick}
-      aria-label='theme-toggler'
-    /> -->
+    <ThemeToggle />
     <img class="image" src="/images/vivanov.jpg" alt="vivanov" />
   </div>
   <div class="social">
@@ -76,7 +74,7 @@ const links = [
 
     .wrap {
       display: flex;
-      // position: fixed;
+      position: relative;
       flex: 0 0 40px;
       width: 290px;
       height: 290px;
@@ -93,12 +91,11 @@ const links = [
     }
     .social {
       display: flex;
-      // position: fixed;
       top: 350px;
       width: 290px;
       justify-content: space-between;
       list-style: none;
-      @media (max-width: 1059px) {
+      @media (max-width: $lg) {
         position: static;
         width: 200px;
       }
