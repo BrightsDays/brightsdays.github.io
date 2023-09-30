@@ -1,0 +1,124 @@
+---
+const links = [
+  {
+    title: 'Telegram',
+    image: '/images/telegram.svg',
+    url: 'https://t.me/brightsdays',
+    target: '_blank',
+  },
+  {
+    title: 'Google Mail',
+    image: '/images/mail.svg',
+    url: 'mailto:brightsdayss@mail.com',
+    target: '',
+  },
+  {
+    title: 'Instagram',
+    image: '/images/instagram.svg',
+    url: 'https://www.instagram.com/brightsdays',
+    target: '_blank',
+  },
+  {
+    title: 'Github',
+    image: '/images/github.svg',
+    url: 'https://github.com/BrightsDays',
+    target: '_blank',
+  },
+]
+---
+
+<div class="card">
+  <div class="wrap">
+    <!-- <ThemeToggler
+      style={{ backgroundImage: `url(${togglerImage.src})` }}
+      onClick={onClick}
+      aria-label='theme-toggler'
+    /> -->
+    <img class="image" src="/images/vivanov.jpg" alt="vivanov" />
+  </div>
+  <div class="social">
+    {
+      links.map((link, index) => (
+        <a
+          class="item"
+          href={link.url}
+          title={link.title}
+          target={link.target}
+          style={{ backgroundImage: `url(${link.image})` }}
+        />
+      ))
+    }
+  </div>
+</div>
+
+<style lang="scss">
+  @import '@/styles/media';
+
+  .card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 20px;
+    vertical-align: top;
+    margin: 0 auto;
+    width: 290px;
+    @media (max-width: $lg) {
+      width: 100%;
+      max-width: 720px;
+      justify-content: space-between;
+      flex-direction: row;
+      padding: 0 10px;
+      gap: 10px;
+    }
+    @media (max-width: $spec) {
+      padding: 0;
+    }
+
+    .wrap {
+      display: flex;
+      // position: fixed;
+      flex: 0 0 40px;
+      width: 290px;
+      height: 290px;
+      .image {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+      @media (max-width: $lg) {
+        position: relative;
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .social {
+      display: flex;
+      // position: fixed;
+      top: 350px;
+      width: 290px;
+      justify-content: space-between;
+      list-style: none;
+      @media (max-width: 1059px) {
+        position: static;
+        width: 200px;
+      }
+
+      .item {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        transition: opacity 0.6s;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 30px;
+        &:hover {
+          opacity: 0.5;
+        }
+        @media (max-width: 1059px) {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+</style>

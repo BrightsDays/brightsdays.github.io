@@ -1,33 +1,21 @@
 {
-  "name": "brightsdays.github.io",
-  "version": "0.1.0",
-  "private": true,
+  "name": "tasty-trappist",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start",
-    "lint": "next lint",
-    "deploy": "next build && next export && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out brightsdays.github.io gh-pages"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "@next/bundle-analyzer": "^13.4.2",
-    "@reduxjs/toolkit": "^1.8.5",
-    "next": "12.3.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-is": "^18.2.0",
-    "react-redux": "^8.0.4",
-    "redux": "^4.2.0",
-    "remark": "^14.0.2",
-    "remark-html": "^15.0.1",
-    "styled-components": "^5.3.6",
-    "use-dark-mode-ts": "^1.0.2"
+    "astro": "^3.2.0",
+    "@astrojs/node": "^6.0.1",
+    "vitest": "^0.34.6"
   },
   "devDependencies": {
-    "@types/node": "18.7.23",
-    "@types/react": "18.0.21",
-    "eslint": "8.24.0",
-    "eslint-config-next": "12.3.1",
-    "typescript": "4.8.4"
+    "autoprefixer": "^10.4.16",
+    "sass": "^1.68.0"
   }
 }
