@@ -1,0 +1,50 @@
+---
+
+---
+
+<div class="content">
+  <nav class="navigation">
+    <span class="text">&#123;&nbsp;</span>
+    <a class="link" href="/">about</a>
+    <span class="text">,&nbsp;</span>
+    <a class="link" href="/projects">projects</a>
+    <span class="text">,&nbsp;</span>
+    <a class="link" href="/contacts">contacts</a>
+    <span class="text">&nbsp;&#125;</span>
+  </nav>
+  <slot />
+</div>
+
+<style lang="scss">
+  @import '@/styles/media';
+
+  .content {
+    width: 720px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    .navigation {
+      margin-bottom: 40px;
+      padding: 0 10px;
+      @media (max-width: $sm) {
+        margin-bottom: 20px;
+        padding: 0;
+        text-align: center;
+      }
+
+      .text {
+        font-size: 2.2em;
+        font-weight: 500;
+        pointer-events: none;
+      }
+
+      .link {
+        font-size: 2.2em;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+</style>
