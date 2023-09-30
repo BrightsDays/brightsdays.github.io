@@ -1,6 +1,7 @@
 ---
 layout: ../layouts/PostLayout.astro
 title: BrightsDays - Contacts
+description: Send me a message
 ---
 
 # Contacts

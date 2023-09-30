@@ -1,6 +1,7 @@
 ---
 layout: ../layouts/PostLayout.astro
 title: BrightsDays
+description: Vue.js Frontend Developer
 ---
 
 # Hello! 👋

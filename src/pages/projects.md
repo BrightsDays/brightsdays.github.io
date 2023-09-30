@@ -1,6 +1,7 @@
 ---
 layout: ../layouts/PostLayout.astro
 title: BrightsDays - Projects
+description: My personal projects
 ---
 
 # Projects
