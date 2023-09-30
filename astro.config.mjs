@@ -5,7 +5,7 @@ import node from '@astrojs/node'
 export default defineConfig({
   site: 'https://brightsdays.github.io',
   scopedStyleStrategy: 'class',
-  output: 'hybrid',
+  output: 'static',
   adapter: node({
     mode: 'standalone',
   }),
