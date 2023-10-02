@@ -6,17 +6,17 @@ title: BrightsDays - Contacts
 # Contacts
 
 The quickest way to reach me is through messaging apps
-like [Telegram](https://t.me/brightsdays) or [WhatsApp](https://api.whatsapp.com/send/?phone=995591100321).
+like <a href="https://t.me/brightsdays" target="_blank">Telegram</a> or <a href="https://api.whatsapp.com/send/?phone=995591100321" target="_blank">WhatsApp</a>.
 
 Feel free to drop me an email
-at [brightsdayss@gmail.com](mailto:brightsdayss@mail.com);
+at <a href="mailto:brightsdayss@mail.com" target="_blank">brightsdayss@gmail.com</a>;
 I check it regularly.
 
 You can also connect with me on various social networks:
 
-- [Linkedin](https://www.linkedin.com/in/brightsdays/)
-- [Facebook](https://www.facebook.com/brightsdays/)
-- [Instagram](https://www.instagram.com/brightsdays)
-- [Github](https://www.github.com/brightsdays)
+- <a href="https://www.linkedin.com/in/brightsdays/" target="_blank">Linkedin</a>
+- <a href="https://www.facebook.com/brightsdays/" target="_blank">Facebook</a>
+- <a href="https://www.instagram.com/brightsdays" target="_blank">Instagram</a>
+- <a href="https://www.github.com/brightsdays" target="_blank">Github</a>
 
 I look forward to connecting with you!
