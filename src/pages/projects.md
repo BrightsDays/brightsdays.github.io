@@ -6,6 +6,10 @@ description: My personal projects
 
 # Projects
 
+### <a href="https://brightsdays.github.io/mobile-cairn/" target="_blank">Pocket Cairn</a>
+
+A web application designed to help players create and manage their characters for Cairn (role playing game by <a href="https://newschoolrevolution.com/" target="_blank">Yochai Gal</a>) on mobile devices or desktops, with a primary emphasis on smartphone use. It provides convenience at any time and place, without the need for additional accessories.
+
 ### <a href="https://brightsdays.github.io/mausritter-online-sheet/" target="_blank">Mauseritter Online Sheet</a>
 
 Mauseritter Online Sheet is a character creation and management tool designed for
