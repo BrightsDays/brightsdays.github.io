@@ -6,30 +6,24 @@ description: Vue.js Frontend Developer
 
 # Hello! 👋
 
-My name is Viacheslav, and currently I based in Tbilisi 🇬🇪.  
-I'm a Frontend Developer with 3 years of experience.  
-Specialize in Vue.js development since 2021.
+My name is Viacheslav, and I am currently based in Tbilisi 🇬🇪.
 
-## Work Experience
+I develop applications that help players create and manage their characters and assist game masters in running their games. Additionally, I create YouTube videos about old-frame Magic: The Gathering and OSR tabletop role-playing games.
 
-### <a href="https://www.sidusheroes.com" target="_blank">Sidus Games</a> (2022 - 2023)
+## My projects
 
-A company specializing in the creation of NFT-based games. In this dynamic environment, I:
+### <a href="https://www.youtube.com/brightsdaysmtg" target="_blank">Brightsdaysmtg YouTube Channel</a>
 
-- Collaborated cross-functionally to design and implement responsive browser game components using Vue.js.
-- Developed custom Vue, React, and Svelte components, integrating third-party libraries for enhanced user interfaces.
-- Created promotional landing pages and informational websites for the games, driving engagement and player interest.
+Welcome to Brightsdaysmtg, where I share captivating content dedicated to
+<a href="http://oldschool-mtg.blogspot.com/" target="_blank">Old School Magic</a>. On this channel, you'll find a
+variety of videos, including game recordings and nostalgic tales.
 
-### <a href="https://extteam.ru/" target="_blank">ExtTeam</a> (2021-2022)
+### <a href="https://brightsdays.github.io/pocket-cairn/" target="_blank">Pocket Cairn</a>
 
-At ExtTeam, I played a pivotal role in the creation of an intranet portal and landing page constructor. My contributions included:
+A web application designed to help players create and manage their characters for Cairn (role playing game by <a href="https://newschoolrevolution.com/" target="_blank">Yochai Gal</a>) on mobile devices or desktops, with a primary emphasis on smartphone use.
 
-- Development of key features for the intranet portal, including a calendar, personal area, information pop-ups, maps, and various UI components.
-- Crafting page components, tables, forms, personal areas, and administration panels, ensuring a seamless user experience.
+### <a href="https://brightsdays.github.io/mausritter-online-sheet/" target="_blank">Mauseritter Online Sheet</a>
 
-### <a href="https://adcombo.com/" target="_blank">AdCombo</a> (2020-2021)
-
-At AdCombo, a company specializing in marketing page development, my responsibilities as a Frontend Developer encompassed:
-
-- Designing and implementing numerous engaging landing pages to meet client requirements.
-- Diligently resolving issues and enhancing the performance of existing templates, ensuring optimal functionality and user satisfaction.
+Mauseritter Online Sheet is a character creation and management tool designed for
+Mauseritter, an engaging role-playing game centered around brave mouse adventurers
+from <a href="https://losing.games" target="_blank">Losing Games</a>.
