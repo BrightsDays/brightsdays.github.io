@@ -6,7 +6,7 @@ description: Vue.js Frontend Developer
 
 # Hello! 👋
 
-My name is Viacheslav, and I am currently based in Tbilisi 🇬🇪.
+My name is Viacheslav, and I am currently based in Sofia 🇧🇬.
 
 I develop applications that help players create and manage their characters and assist game masters in running their games. Additionally, I create YouTube videos about old-frame Magic: The Gathering and OSR tabletop role-playing games.
 
